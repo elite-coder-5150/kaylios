@@ -10,3 +10,5 @@ The Search class is responsible for the following:
 4. **Search Dategory** - This will return a list of categories based on the search criteria.
 5. **Tag Search** - This will return a list of tags based on the search criteria.
 6. **Posts** - This will return a list of posts based on the search criteria.
+
+I absolutly love using this application for documenting components.
