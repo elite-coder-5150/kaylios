@@ -64,7 +64,7 @@ class Follow {
             $query->execute(array(':session' => $session, ':get' => $get));
 
             return "ok";
-        } 
+        }
     }
 
     public function followers($get) {
