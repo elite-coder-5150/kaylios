@@ -1,0 +1,27 @@
+{
+  "name": "kaylios",
+  "version": "1.0.0",
+  "description": "Social network for developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elite-coder-5150/kaylios.git"
+  },
+  "keywords": [
+    "PHP",
+    "social",
+    "media"
+  ],
+  "author": "Darrell Parkhouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elite-coder-5150/kaylios/issues"
+  },
+  "homepage": "https://github.com/elite-coder-5150/kaylios#readme",
+  "dependencies": {
+    "jquery": "^3.6.3"
+  }
+}
