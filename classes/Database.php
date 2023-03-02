@@ -10,6 +10,8 @@ class Database extends PDO{
     protected static $password = 'root';
 
     public function __construct() {
+        parent::__construct();
+
         try {
             self::$inst = new PDO('mysql:host=localhost;dbname=' . $this->dir, self::$username, self::$password);
             self::$inst->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
