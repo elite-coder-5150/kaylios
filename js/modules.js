@@ -62,6 +62,11 @@
                 menu: null
             }
 
+            let settings = $.extend({}, defaults, options);
+
         })
+
+        let div = this;
+
     }
 })(jQuery);
