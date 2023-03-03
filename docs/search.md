@@ -12,3 +12,32 @@ The Search class is responsible for the following:
 6. **Posts** - This will return a list of posts based on the search criteria.
 
 I absolutly love using this application for documenting components.
+
+
+
+```javascript
+const form = document.createElement('form');
+form.setAttribute('id', 'my-form');
+```
+
+
+
+```php
+<?php
+    $this->search->searhById()
+?>
+```
+
+```javascript
+strip.tokens.creat({
+    card: {
+        number: '4242424242424242',
+        exp_month: 12,
+        exp_year: 2023,
+        cvc: '123'
+    }
+}, ((err, token) => {
+    
+}))
+```
+
