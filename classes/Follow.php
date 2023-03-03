@@ -6,6 +6,7 @@ use classes\Database;
 use classes\Util;
 use classes\Notification;
 use classes\Settings;
+
 class Follow {
     protected $db;
     protected $util;
@@ -72,6 +73,7 @@ class Follow {
 
         $sql = "SELECT follow_by FROM follow_system WHERE follow_to=:session";
 
-
+        $query = $this->db->prepare($sql);
+        $query->execute(array(':session' => $session));
     }
 }
