@@ -52,7 +52,9 @@ class Follow {
             $query = $this->db->prepare($sql);
             $query->execute(array(':session' => $session, ':get' => $get));
 
-            return "ok";
+            // return "ok";
+
+            $this->notify->getNotifications("friend-request", $get, "unfollow");
         }
     }
 
