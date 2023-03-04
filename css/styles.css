@@ -11,6 +11,10 @@ body {
 }
 
 /***** typography *****/
+.welcome-title {
+  color: #0D1829;
+}
+
 /***** logo *****/
 .logo {
   background: url("../img/logo.png") no-repeat;
