@@ -19,19 +19,7 @@ class Follow {
         $this->settings = new Settings();
     }
 
-    public function isFollowing($get) {
-        if (isset($_SESSION['id'])) {
-            $session = $_SESSION['id'];
 
-            $sql = "SELECT follow_to FROM follow_system WHERE follow_by=:session AND follow_to=:get limit 1";
-
-            $query = $this->db->prepare($sql);
-            $query->execute(array(':session' => $session, ':get' => $get));
-
-
-            return $query->rowCount() != 0 || $query->rowCount() != null;
-        }
-    }
 
     public function follow($get) {
         $session = $_SESSION['id'];
