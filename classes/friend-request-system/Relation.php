@@ -47,7 +47,14 @@ class Relation {
         $query->execute([':from' => $from, ':to' => $to]);
     }
 
-    public function
+    public function unfriend($from, $to) {
+        $sql = "DELETE FROM `relations` WHERE  (`from` = :from AND `to` = :to) OR(`from` = :to AND `to` = :from)";
+
+        $query = $this->db->prepare($sql);
+        $query->execute([':from' => $from, ':to' => $to]);
+
+        return true;
+    }
     private function alreadyFriend($from, $to) {
         $sql = "SELECT * FROM `relation` WHERE `from` = :from AND `to` = :to";
 
@@ -116,6 +123,36 @@ class Relation {
         $query = $this->db->prepare($sql);
         $query->execute([':id' => $id]);
 
-        return $query->fetchAll();
+        // return $query->fetchAll();
+
+        if ($this->isFollowing($get)) {
+            $sql = "DELETE FROM follow_system WHERE follow_by=:session AND follow_to=:get";
+
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':session' => $session, ':get' => $get));
+
+            return true;
+        } else {
+            $sql = "INSERT INTO follow_system (follow_by, follow_to, follow_time) VALUES (:session, :get, now())";
+
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':session' => $session, ':get' => $get));
+
+            return true;
+        }
+    }
+
+    public function isFollowing($get) {
+        if (isset($_SESSION['id'])) {
+            $session = $_SESSION['id'];
+
+            $sql = "SELECT follow_to FROM follow_system WHERE follow_by=:session AND follow_to=:get limit 1";
+
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':session' => $session, ':get' => $get));
+
+
+            return $query->rowCount() != 0 || $query->rowCount() != null;
+        }
     }
 }
