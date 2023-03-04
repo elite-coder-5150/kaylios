@@ -15,6 +15,7 @@ body {
 
 /***** typography *****/
 .welcome-title {
+    @include font-color($clr-dark-text);
 }
 
 /***** logo *****/
