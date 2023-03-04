@@ -3,7 +3,7 @@
 namespace classes;
 
 class Time {
-    public function __constructor ($time_ago) {
+    public function timeAgo ($time_ago) {
         $time_ago = strtotime($time_ago) ? strtotime($time_ago) : $time_ago;
         $time = time() - $time_ago;
         $time = ($time + 4 * 60 * 60) + 30 * 60;
