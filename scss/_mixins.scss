@@ -1,0 +1,10 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@function px-to-rem($pz) {
+    $result: calc($pz / 16) * 1rem;
+    @return $result;
+}
+
