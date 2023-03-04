@@ -8,3 +8,10 @@
     @return $result;
 }
 
+@mixin font-color($color) {
+    color: $color;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+}
