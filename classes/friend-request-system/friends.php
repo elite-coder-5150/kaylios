@@ -32,6 +32,10 @@
                 case "cancel":
                     $pass = $rel->cancel($user_id, $_POST['req']);
                     break;
+
+                case "unfriend":
+                    $pass = $rel->unfriend($user_id, $_POST['req']);
+                    break;
             }
         }
     ?>
