@@ -1,3 +1,7 @@
+/** eslint-env jquery */
+/** eslint no-undef: "error" */
+/** eslint no-unused-vars: "error" */
+/** eslint no-undef: "error" */
 (($) => {
     $.fn.notify = (options) => {
         let defaults = {
@@ -14,7 +18,7 @@
 
         let div = this;
 
-        this.animate({
+        div.animate({
             top: settings.afterTop
         }, "fast", () => {
             setTimeout(() => {
@@ -25,6 +29,7 @@
         })
 
         this.on('click', (e) => {
+            e.preventDefault();
             if (settings.action != null)
                 window.location.href = settings.action;
 
@@ -44,9 +49,9 @@
             menu: $('.options')
         }
 
-        settings = $.extend({}, defaults, options);
+        let settings = $.extend({}, defaults, options);
 
-        this.on('click', (e) => {
+        this.on('click', (e) => { 
             e.preventDefault();
             settings.menu.toggle();
             div.toggleClass('show-more-toggle');
@@ -57,6 +62,7 @@
 (($) => {
     $.fn.toggleMenu = (options) => {
         this.each((e) => {
+            e.preventDefault();
             let defaults = {
                 btn: null,
                 menu: null
