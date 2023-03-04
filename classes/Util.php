@@ -13,7 +13,7 @@ class Util {
         $query = $this->db->prepare($sql);
         $query->execute(array(':get_id' => $get_id));
 
-        $row = $query->fetch(PDO::FETCH_OBJ);
+        $row = $query->fetch(\PDO::FETCH_OBJ);
 
         return $row->$what;
     }
