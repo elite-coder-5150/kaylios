@@ -98,4 +98,8 @@ class Avatar {
     public function cropAvatar($when, $group) {
 
     }
+    
+    public function getAvatar () {
+        
+    }
 }
