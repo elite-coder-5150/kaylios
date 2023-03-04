@@ -1,0 +1,55 @@
+@import "vars";
+@import "mixins";
+
+/***** base styles *****/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $base-font-family;
+    background: $clr-body-bg;
+}
+
+/***** typography *****/
+.welcome-title {
+}
+
+/***** logo *****/
+.logo {
+    background: url('../img/logo.png') no-repeat;
+    max-width: 38px;
+    max-height: 38px;
+}
+
+/***** 01 - login styles *****/
+.login-card {
+    @include size(px-to-rem(480), px-to-rem(548));
+
+    padding: 32px 40px;
+    background: $clr-light-bg;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+
+    .card-header {
+        display: flex;
+    }
+    .card-body {
+        display:flex;
+        flex-direction: column;
+        .login-form {
+            .input-group {
+                display: flex;
+                flex-direction: row;
+            }
+
+            input {
+                border: 1px solid $clr-base-border;
+                border-radius: px-to-rem(8);
+                width: 100%;
+            }
+        }
+    }
+}
