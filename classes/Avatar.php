@@ -15,7 +15,7 @@ class Avatar {
         return $src[0];
     }
 
-    public function getAvaatar($get) {
+    public function getAvatar($get) {
         $src = glob("users/$get/avatar/*");
         return $src[0];
     }
@@ -40,6 +40,7 @@ class Avatar {
             }
         }
     }
+
 
     public function copyAvatar($orig_file, $when, $grp) {
         $session = $_SESSION['id'];
@@ -99,7 +100,8 @@ class Avatar {
 
     }
     
-    public function getAvatar () {
-        
+    public function getAvatar ($id) {
+        $src = glob("users/$id/avatar/*");
+        return $src[0];
     }
 }
