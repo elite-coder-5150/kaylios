@@ -2,6 +2,7 @@
 
 namespace classes\FriendRequestSystem;
 
+use classes\Database;
 class Relation {
     protected $db;
     public $error;
@@ -123,23 +124,7 @@ class Relation {
         $query = $this->db->prepare($sql);
         $query->execute([':id' => $id]);
 
-        // return $query->fetchAll();
-
-        if ($this->isFollowing($get)) {
-            $sql = "DELETE FROM follow_system WHERE follow_by=:session AND follow_to=:get";
-
-            $query = $this->db->prepare($sql);
-            $query->execute(array(':session' => $session, ':get' => $get));
-
-            return true;
-        } else {
-            $sql = "INSERT INTO follow_system (follow_by, follow_to, follow_time) VALUES (:session, :get, now())";
-
-            $query = $this->db->prepare($sql);
-            $query->execute(array(':session' => $session, ':get' => $get));
-
-            return true;
-        }
+        return $query->fetchAll();
     }
 
     public function isFollowing($get) {
@@ -155,4 +140,6 @@ class Relation {
             return $query->rowCount() != 0 || $query->rowCount() != null;
         }
     }
+
+
 }
