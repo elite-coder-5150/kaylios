@@ -29,7 +29,7 @@ class Follow {
 
         $session_u = $this->util->getDetails($session, 'username');
         $get_u = $this->util->getDetails($get, 'username');
-        $this->notify->notifyFollow();
+        $this->notify->notifyFollow($get);
 
         if (!$this->settings->AmIBlocked($get)) {
             if (!$this->isFollowing($get)) {
@@ -65,5 +65,22 @@ class Follow {
 
         $query = $this->db->prepare($sql);
         $query->execute(array(':session' => $session));
+    }
+    
+    public function isFollowing ($get) {
+        if (isset($_SESSION['id'])) {
+            $session = $_SESSION['id'];
+
+            $sql = "SELECT follow_to FROM follow_system WHERE follow_by=:session AND follow_to=:get LIMIT 1";
+
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':session' => $session, ':get' => $get));
+
+            if ($query->rowCount() != 0 || $query->rowCount() != null) {
+                return true;
+            } else if ($query->rowCount() == 0) {
+                return false;
+            }
+        }
     }
 }
