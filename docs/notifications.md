@@ -18,7 +18,7 @@ To use this component as a standalone component, follow these steps:
 
 1.   include the component in your projects html file.
 
-```javascript
+```html
 <script src="notification.js"></script>
 ```
 
