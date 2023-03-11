@@ -80,4 +80,19 @@ class Follow {
             ]);
         }
     }
+
+    public function getFollowers($get) {
+        $session = $_SESSION['id'];
+
+        $sql = "SELECT follow_by FROM follow_system
+                WHERE follow_to = :get
+            ";
+
+        $query = $this->db->prepare($sql);
+        $query->execute([
+            ':get' => $get
+        ]);
+
+        return $query->rowCount();
+    }
 }
