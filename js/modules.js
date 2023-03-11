@@ -141,3 +141,66 @@
         return this;
     }
 })(jQuery);
+
+// plugin for toggle post options
+(($) => {
+    $.fn.togglePost = (options) => {
+        this.each((e) => {
+            let elem = $(this);
+            let time = elem.find('.time');
+            let opt_menu = elem.find('.options-menu');
+            let defaults = {};
+            let settings = $.extend({}, defaults, options);
+
+            elem.on('mouseover', (e) => {
+                time.hide();
+                opt_menu.show();
+            }).on('mouseleave', (e) => {
+                time.show();
+                opt_menu.hide();
+            });
+        });
+
+        return this;
+    }
+})(jQuery);
+
+// plugin for comment toggle
+(($) => {
+    $.fn.toggleComment = (options) => {
+        this.each((e) => {
+            let defaults = {}
+            let settings = $.extend({}, defaults, options);
+
+            let elem = $(this);
+
+            // i could also use show and hide classes
+            elem.on('click', (e) => {
+                elem.removeClass('textarea-toggle');
+            })
+
+            elem.on('blur', (e) => {
+                elem.addClass('textarea-toggle');
+            });
+            return this;
+        })
+    }
+})(jQuery);
+
+// plugin for toggling extra options for post
+(($) => {
+    $.fn.togglePostOptions = (options) => {
+
+        let elem = $(this);
+        let defaults = {}
+        let settings = $.extend({}, defaults, options);
+
+        let div = $('.options');
+        elem.on('click', (e) => {
+            elem.toggleClass('show-more-toggle');
+            div.slideToggle('fast');
+
+            $('.post-options').toggleClass('post-options-toggle');
+        });
+    }
+})(jQuery);
