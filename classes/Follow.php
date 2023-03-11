@@ -62,4 +62,22 @@ class Follow {
             }
         }
     }
+
+    public function unfollow($get) {
+        if ($this->isFollowing($get)) {
+            $session = $_SESSION['id'];
+
+            $sql = "DELETE FROM follow_system
+                    WHERE follow_by = :session
+                    AND follow_to = :get
+                    LIMIT 1
+                ";
+
+            $query = $this->db->prepare($sql);
+            $query->execute([
+                ':session' => $session,
+                ':get' => $get
+            ]);
+        }
+    }
 }
