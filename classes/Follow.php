@@ -37,4 +37,29 @@ class Follow {
             return $query->rowCount() == 1;
         }
     }
+
+    public function follow($get) {
+        $session = $_SESSION['id'];
+        $session_u = $this->util->getDetails($session, 'username');
+        $get_u = $this->util->getDetails($get, 'username');
+
+        if (!$this->settings->AmIBlocked($get)) {
+            if (!$this->isFollowing($get)) {
+                $sql = "INSERT INTO follow_system (follow_from, follow_to)
+                        VALUES (:session, :get)
+                    ";
+
+                $query = $this->db->prepare($sql);
+                $query->execute([
+                    ':session' => $session,
+                    ':get' => $get
+                ]);
+
+                $this->notify->notifyFollow($get, $session_u, $get_u);
+                return "ok";
+            } else {
+                return "You are already following this user";
+            }
+        }
+    }
 }
