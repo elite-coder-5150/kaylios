@@ -119,77 +119,6 @@ class Notification
     public function getNotifications($type) {
         $session = $_SESSION['id'];
 
-        if ($type == "follow") {
-            echo "<li class='notify'>
-                    <div class='profile'>
-                        <!-- remove the phoenix backer images -->
-                        <img src='img/avatars/' alt=''>
-                    </div>
-                    <div class='notify-body'>
-                        <div class='notify-header'>
-                            <a href='profile.php?user=" . $this->util->getDetails($session, 'username') . "'>" . $this->util->getDetails($session, 'username') . "</a> is now following you
-                        </div>
-                        <p class='notify-text'>
-                            <strong>
-                                <?php echo $this->util->getDetails($session, 'username'); ?>
-                            </strong>
-                            is now following you
-                        </p>
-                        <div class='notify-time'>
-                            <span class='timeago' title='" . $this->time->timeAgo($this->util->getDetails($session, 'username')) . "'></span>
-                        </div>
-                    </div>
-                 </li>
-            ";
-        }
-
-        if ($type == "friend-request") {
-            echo "
-                <li>
-                    <div class='profile'>
-                        <img src='img/avatars/" . $this->avatar->getAvatar($session) . "' alt=''>
-                    </div>
-                    <div class='notify-body'>
-                        <div class='notify-header'>
-                            <a href='profile.php?user=" . $this->util->getDetails($session, 'username') . "'>" . $this->util->getDetails($session, 'username') . "</a> sent you a friend request
-                        </div>
-                        <p class='notify-text'>
-                            <strong>
-                                <?php echo $this->util->getDetails($session, 'username'); ?>
-                            </strong>
-                            sent you a friend request
-                        </p>
-                        <div class='notify-time'>
-                            <span class='timeago' title='" . $this->time->timeAgo($this->util->getDetails($session, 'username')) . "'></span>
-                        </div>
-                    </div>
-                </li>
-            ";
-        }
-
-        if ($type == 'post-comment') {
-            echo "
-                <li>
-                    <div class='profile'>
-                        <img src='img/avatars/" . $this->avatar->getAvatar($session) . "' alt=''>
-                    </div>
-                    <div class='notify-body'>
-                        <div class='notify-header'>
-                            <a href='profile.php?user=" . $this->util->getDetails($session, 'username') . "'>" . $this->util->getDetails($session, 'username') . "</a> commented on your post
-                        </div>
-                        <p class='notify-text'>
-                            <strong>
-                                <?php echo $this->util->getDetails($session, 'username'); ?>
-                            </strong>
-                            commented on your post
-                        </p>
-                        <div class='notify-time'>
-                            <span class='timeago' title='" . $this->time->timeAgo($this->util->getDetails($session, 'username')) . "'></span>
-                        </div>
-                    </div>
-                </li>
-            ";
-        }
 
         if ($type == 'post-like') {
             echo "
@@ -213,6 +142,77 @@ class Notification
                     </div>
                 </li>
             ";
+            if ($type == "follow") {
+                echo "<li class='notify'>
+                    <div class='profile'>
+                        <!-- remove the phoenix backer images -->
+                        <img src='img/avatars/' alt=''>
+                    </div>
+                    <div class='notify-body'>
+                        <div class='notify-header'>
+                            <a href='profile.php?user=" . $this->util->getDetails($session, 'username') . "'>" . $this->util->getDetails($session, 'username') . "</a> is now following you
+                        </div>
+                        <p class='notify-text'>
+                            <strong>
+                                <?php echo $this->util->getDetails($session, 'username'); ?>
+                            </strong>
+                            is now following you
+                        </p>
+                        <div class='notify-time'>
+                            <span class='timeago' title='" . $this->time->timeAgo($this->util->getDetails($session, 'username')) . "'></span>
+                        </div>
+                    </div>
+                 </li>
+            ";
+            }
+
+            if ($type == "friend-request") {
+                echo "
+                <li>
+                    <div class='profile'>
+                        <img src='img/avatars/" . $this->avatar->getAvatar($session) . "' alt=''>
+                    </div>
+                    <div class='notify-body'>
+                        <div class='notify-header'>
+                            <a href='profile.php?user=" . $this->util->getDetails($session, 'username') . "'>" . $this->util->getDetails($session, 'username') . "</a> sent you a friend request
+                        </div>
+                        <p class='notify-text'>
+                            <strong>
+                                <?php echo $this->util->getDetails($session, 'username'); ?>
+                            </strong>
+                            sent you a friend request
+                        </p>
+                        <div class='notify-time'>
+                            <span class='timeago' title='" . $this->time->timeAgo($this->util->getDetails($session, 'username')) . "'></span>
+                        </div>
+                    </div>
+                </li>
+            ";
+            }
+
+            if ($type == 'post-comment') {
+                echo "
+                <li>
+                    <div class='profile'>
+                        <img src='img/avatars/" . $this->avatar->getAvatar($session) . "' alt=''>
+                    </div>
+                    <div class='notify-body'>
+                        <div class='notify-header'>
+                            <a href='profile.php?user=" . $this->util->getDetails($session, 'username') . "'>" . $this->util->getDetails($session, 'username') . "</a> commented on your post
+                        </div>
+                        <p class='notify-text'>
+                            <strong>
+                                <?php echo $this->util->getDetails($session, 'username'); ?>
+                            </strong>
+                            commented on your post
+                        </p>
+                        <div class='notify-time'>
+                            <span class='timeago' title='" . $this->time->timeAgo($this->util->getDetails($session, 'username')) . "'></span>
+                        </div>
+                    </div>
+                </li>
+            ";
+            }
         }
 
         if ($type == 'post-share') {
