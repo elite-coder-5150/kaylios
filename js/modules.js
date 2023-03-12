@@ -2,6 +2,27 @@
 /** eslint no-undef: "error" */
 /** eslint no-unused-vars: "error" */
 /** eslint no-undef: "error" */
+const nameShortener =(elem, length) => {
+    if (!parseInt(length)) {
+        return
+    }
+
+    if (elem.length >= parseInt(length)) {
+        return elem.substring(0, length) + '...'
+    } else if (elem.length < parseInt(length)) {
+        return elem
+    }
+}
+const blur_page = () => {
+    this.addBlur = () => {
+        $('.container, .wrapper, header, .login-container, .index-header, .quick-login').addClass('blur_page');
+    }
+    this.removeBlur = () => {
+        $('.container, .wrapper, header, .login-container, .index-header, .quick-login').removeClass('blur_page');
+    }
+}
+
+const blur = new blur_page();
 (($) => {
     $.fn.notify = (options) => {
         let defaults = {
@@ -381,5 +402,41 @@
             });
         });
         return this;
+    }
+})(jQuery);
+
+// plugin for viewing avatar
+(($) => {
+    $.fn.viewAvatar = (options) => {
+        this.each((e) => {
+            let defaults = {}
+            let settings = $.extend({}, defaults, options);
+
+            let elem = $(this);
+            let overlay = $('.overlay');
+
+        })
+    }
+})(jQuery);
+
+// plugin for viewing profile
+(($) => {
+    $.fn.viewProfile = (options) => {
+        let defaults = {}
+        let settings = $.extend({}, defaults, options);
+
+        let elem = $(this);
+        let overlay = $('.overlay');
+        let div = $('.view-profile');
+        let input = $('.view-profile input[type="range"]');
+        let img = $('.view-profile img');
+
+        input.on('change', (e) => {
+            img.css('width', $(this).val());
+        });
+
+        elem.on('click', (e) => {
+            blur.addBlur()
+        });
     }
 })(jQuery);
