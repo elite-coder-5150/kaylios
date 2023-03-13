@@ -436,7 +436,22 @@ const blur = new blur_page();
         });
 
         elem.on('click', (e) => {
-            blur.addBlur()
+            blur.addBlur();
+            overlay.show();
+
+            div.fadeIn('fast');
+            overlay.addClass('overlay-cursor');
+
+            div.on('click', (e) => {
+                overlay.hide();
+                blur.removeBlur();
+                div.fadeOut('fast');
+                overlay.removeClass('overlay-cursor');
+                input.val('200');
+                img.css('width', '200px');
+            })
         });
+
+        return this;
     }
 })(jQuery);
