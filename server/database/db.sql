@@ -9,6 +9,9 @@ create table
         `follow_date` date NOT NULL
 );
 
+alter table `follow_system`
+    drop column `followee`;
+
 create table 
     `users` (
         `user_id` int(11) NOT NULL primary key AUTO_INCREMENT,
@@ -19,7 +22,17 @@ create table
         `profile_picture_url` varchar(255) NOT NULL,
         `joined_date` date
 );
+use `kaylios`;
 
-select u.* from users as u
-join follow_systems as follow on u.user_id = follow.follow_id
-where follow.follow_id = u.user_id;
+select
+    u.user_id, 
+    u.user_name, 
+    u.email, u.bio, 
+    u.profile_picture_url, 
+    u.joined_date
+from follow_system f
+join users u on f.follow_id = u.user_id
+
+select count(*) as follower_count
+from follow_system
+where followee = 'darrell parkhouse'
