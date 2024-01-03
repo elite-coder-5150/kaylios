@@ -1,0 +1,34 @@
+@function px-to-rem($px) {
+    $result: calc($px / 16) * 1rem;
+    @return $result;
+}
+
+@mixin border($style, $size, $type, $color) {
+    @if ($style == "all") {
+        border: $size $type $color;
+    } @else if ($style == "top") {
+        border-top: $size $type $color;
+    } @else if ($style == "bottom") {
+        border-bottom: $size $type $color;
+    } @else if ($style == "left") {
+        border-left: $size $type $color;
+    } @else if ($style == "right") {
+        border-right: $size $type $color;
+    } @else {
+        @if ($style == "tb") {
+            border: {
+                top: $size $type $color;
+                bottom: $size $type $color;
+            }
+        } @else if ($style == "lr"){
+            border: {
+                left: $size $type $color;
+                right: $size $type $color;
+            }
+        }
+    }
+}
+
+@mixin font-size($px) {
+    font-size: px-to-rem($px);
+}
