@@ -32,3 +32,24 @@
 @mixin font-size($px) {
     font-size: px-to-rem($px);
 }
+
+@mixin align-text($direction) {
+    @if direction == 'center' {
+        text-align: center;
+    } @else if direction == 'right' {
+        text-align: right;
+    } @else if direction == 'justify' {
+        text-align: justify;
+    } @else if direction == 'left' {
+        text-align: left;
+    }
+}
+
+.row {
+    display: flex;
+    max-width: 420px;
+}
+
+input {
+    border: none !important;
+}
