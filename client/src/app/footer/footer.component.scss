@@ -1,0 +1,37 @@
+@import "../global-styles/vars";
+@import "../global-styles/base";
+footer {
+    background: $clr-primary;
+    padding: 64px 0;
+    text-align: left;
+    position: sticky;
+    bottom: 0;
+    .col-title {
+        color: #D7BBFC;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+        
+    }
+
+    .col {
+        width: 176px;
+        margin-left: 32px;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: 12px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #E9D7FE;
+        text-transform: capitalize;
+    }
+}
