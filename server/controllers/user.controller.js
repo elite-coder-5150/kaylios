@@ -58,9 +58,43 @@ export const geSingletUsers = async (req, res) => {
 };
 
 export const registerUser = async (req, res) => {
-    
+    try {
+        const { user_name, email} = req.body;
+
+        const hashPass = await bcrypt.hash(pasword, 10);
+
+        const sql = /* sql */`
+            insert into users (user_name, password, email)
+            values (?, ?, ?);
+        `;
+
+        const result = await getResults(sql, [user_name, hashPass, email]);
+
+         return res.status(200).send({
+            message: 'successfully registered user',
+            data: result
+         })
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            messasge: 'internal server error',
+        });
+    }
 };
 
-export const updateUser = async (req, res) => {};
+export const updateUser = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+};
 
-export const deleteUser = async (req, res) => {};
+export const deleteUser = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+};
