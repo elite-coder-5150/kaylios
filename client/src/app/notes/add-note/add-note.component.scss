@@ -1,0 +1,51 @@
+@import "../../global-styles/typography";
+@import "../../global-styles/vars";
+
+.add-note-card {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 96px;
+    // box-shadow: 0 0 20px 30px rgba(0,0,0, 0.15);/
+    .add-note-form {
+        display: flex;
+    }
+    .form-group {
+        margin-bottom: 24px;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;;
+    }
+
+    .md-danger, .md-primary {
+        background: #f00;
+        border: 1px solid #f00;
+        color: $clr-light-text;
+        font-size: 16px;
+        padding: 4px 10px;
+        text-transform: capitalize;
+        border-radius: 8px;
+    }
+
+    .md-primary {
+        background: $clr-primary;
+        border: 1px solid $clr-primary;;
+    }
+}
+textarea, input {
+    resize: none;
+    border: 1px solid $clr-base-border;
+    padding: 14px;
+    font-family: "Inter", sans-serif;
+    width: 320px;
+
+    &:focus, &:active {
+        outline: none;
+    }
+}
+
+textarea {
+    height: 250px;
+}
