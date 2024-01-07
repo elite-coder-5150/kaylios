@@ -28,7 +28,37 @@ export const getAllNotesByUser = async (req, res) => {
 
 export const getSingleNote = async (req, res) => {
     try {
-        
+        const {
+            user_id,  title, content, 
+            created_at, updated_at
+        } = req.body;
+
+        const sql = /* sql *`
+            select 
+                n.user_id, 
+                n.title, 
+                n.content, 
+                n.created_at, 
+                n.updated_at 
+            from notes as n
+            where n.user_id = ?
+        `;
+
+        const results = await getResults(sql, [
+            user_id,  title, content, 
+            created_at, updated_at
+        ]);
+
+        if (!results) {
+            return res.status(404).send({
+                message: 'note not found',
+            });
+        }
+
+        return res.status(200).send({
+            message: 'successfully retrieved a note',
+            data: results
+        });
     } catch (error) {
         console.error(error);
 
