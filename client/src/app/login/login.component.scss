@@ -1,0 +1,58 @@
+@import "../global-styles/vars";
+
+.login-card {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    .icon {
+        margin: 96px auto 0 auto;
+        width: 38px;
+        height: 38px;
+    }
+
+    .card-title {
+        font-size: 30px;
+        margin-top: 24px;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 12px;
+        color: $clr-body-copy;
+    }
+
+    .login-form {
+        text-align: left;
+        margin-top: 32px;
+        
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: $clr-lable-text;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 332px;
+            height: 40px;
+            padding: 10px 14px;
+            border: 1px solid $clr-base-border;
+            border-radius: 8px;
+        }
+
+        .block-primary {
+            width: 332px;
+            padding: 12px;
+            border: 1px solid $clr-primary;
+            background: $clr-primary;
+            font-size: 16px;
+            color: $clr-light-text;
+            text-transform: capitalize;
+            border-radius: 8px;;
+        }
+    }
+}
