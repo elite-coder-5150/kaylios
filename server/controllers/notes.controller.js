@@ -40,7 +40,27 @@ export const getSingleNote = async (req, res) => {
 
 export const createNote = async (req, res) => {
     try {
-        
+        const { 
+            user_id,  title, content, 
+            created_at, updated_at } = req.body;
+
+        const sql = /* sql */`
+            insert into note (user_id, title, content, created_at, updated_at)
+            values (?, ?, ?, ?, ?)
+        `;
+
+        const results = await getResults(sql, [user_id, title, content, created_at, updated_at]);
+
+        if (results.affectedRows === 0) {
+            return res.status(400).send({
+                message: 'error executing query'
+            });
+        }
+
+        res.status(200).send({
+            message: 'successfully create note',
+            data: results
+        });
     } catch (error) {
         console.error(error);
 
