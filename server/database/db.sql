@@ -31,8 +31,27 @@ select
     u.profile_picture_url, 
     u.joined_date
 from follow_system f
-join users u on f.follow_id = u.user_id
+join users u on f.follow_id = u.user_id;
 
-select count(*) as follower_count
-from follow_system
-where followee = 'darrell parkhouse'
+use `kaylios`;
+
+create table `relation` (
+    `relation_id` int(11) PRIMARY KEY AUTO_INCREMENT,
+    `from` bigint(20) not null,
+    `to` bigint(20) NOT NULL,
+    `status` varchar(1) NOT NULL,
+    `since` datetime not null DEFAULT CURRENT_TIMESTAMP()
+);
+use `kaylios`;
+create table `notes` (
+    `note_id` int(11)  PRIMARY KEY AUTO_INCREMENT,
+    `title` varchar(255) NOT NULL,
+    `content` text,
+    `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+)
+
+use `kaylios`;
+alter table `notes`
+    add column `user_id` int(11) after `note_id`;
+
