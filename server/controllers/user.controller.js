@@ -85,9 +85,38 @@ export const registerUser = async (req, res) => {
 
 export const updateUser = async (req, res) => {
     try {
-        
+        const { user_id } = req.params.user_id;
+        const { 
+            user_name, email, pass_hash,  bio, 
+            profille_picture_url, joined_date 
+        } = req.body;
+
+        const sql = /* sql */`
+            update users
+            where user_name = ? and email = ? and hash_pass = ? and 
+            bio = ? and profille_picture_url = ? and joined_date = ?
+        `;
+
+        const results = await getResults(sql, [
+            user_name, email, pass_hash,  bio, 
+            profille_picture_url, joined_dat]);
+
+        if (results.affectedRows === 0) {
+            return res.status(404).send({
+                message: 'user not found'
+            });
+        }
+
+        return res.status(200).send({
+            message: 'successfully updated user',
+            data: results
+        })
     } catch (error) {
-        
+        console.error(error);
+
+        return res.status(500).send({
+            messasge: 'internal server error',
+        });
     }
 };
 
@@ -95,6 +124,10 @@ export const deleteUser = async (req, res) => {
     try {
         
     } catch (error) {
-        
+        console.error(error);
+
+        return res.status(500).send({
+            messasge: 'internal server error',
+        });
     }
 };
