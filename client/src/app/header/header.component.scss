@@ -1,0 +1,94 @@
+@import "../global-styles/vars";
+
+header {
+    border-bottom: 1px solid $clr-base-border;
+    overflow: hidden;
+    
+    &.primary {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 24px 0 0 0;
+        .row {
+            display: flex;
+        }
+
+        .col {
+            // border: 1px solid #f00;
+            &:nth-child(2) {
+                flex: 6
+            }
+
+        }
+        .logo {
+            display: flex;
+            max-width: 50px;
+            line-height: 35px;
+            .logo-text {
+                font-size: px-to-rem(20);
+                line-height: px-to-rem(40);
+                margin-left: px-to-rem(10);
+            }
+        }
+
+        .primary-nav {
+            text-align: left;
+            // display: flex;
+
+            // max-width: 400px;
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    margin-right: 30px;
+                }
+            }
+            a {
+                line-height: 0;
+                margin: 0;
+                padding: 0;
+                text-transform: capitalize;
+                text-decoration: none;
+                color: $clr-nav-text;
+                font-weight: 600;
+                line-height: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            ul.utility-list {
+                list-style: none;
+                // margin-left: auto;
+                a {
+                    text-decoration: none;
+                }
+
+                
+            }
+        }
+
+        .button-group {
+            a {
+                text-decoration: none;
+                padding: 10px 18px;
+                text-transform: capitalize;
+                font-size: 16px;
+                &.md-primary {
+                    background: $clr-primary;
+                    color: $clr-light-text;
+                    margin-left: 20px;
+                    border-radius: 8px;
+                    text-transform: capitalize;
+                }
+
+                &.md-secondary {
+                    color: $clr-nav-text;
+                }
+            }
+        }
+    }
+}
+
