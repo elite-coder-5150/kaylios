@@ -33,7 +33,7 @@ export const getSingleNote = async (req, res) => {
             created_at, updated_at
         } = req.body;
 
-        const sql = /* sql *`
+        const sql = /* sql */`
             select 
                 n.user_id, 
                 n.title, 
