@@ -52,7 +52,31 @@ export const createNote = async (req, res) => {
 
 export const updateNote = async (req, res) => {
     try {
-        
+        const { note_id } = req.params.note_id;
+
+        if (!note_id) {
+            return res.status(400).send({
+                message: 'note id is required'
+            });
+        }
+
+        const sql = /* sql */`
+            update notes
+            set note_id = ?, user_id = ?, title = ?, content = ?,
+            created_at = ?, updated_at = ?
+        `;
+
+        const results = await getResults(sql, [note_id]);
+
+        if (results.affectedRows === 0) {
+            return res.status(404).send({
+                message: 'note not found'
+            });
+        }
+
+        return res.status(200).send({
+            message: 'note deleted successfully'
+        })
     } catch (error) {
         console.error(error);
 
