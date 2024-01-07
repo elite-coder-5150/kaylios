@@ -91,6 +91,11 @@ export const updateUser = async (req, res) => {
             profille_picture_url, joined_date 
         } = req.body;
 
+        if (!user_id) {
+            return res.status(403).send({
+                message: 'user id is required'
+            })
+        }
         const sql = /* sql */`
             update users
             where user_name = ? and email = ? and hash_pass = ? and 
@@ -122,7 +127,19 @@ export const updateUser = async (req, res) => {
 
 export const deleteUser = async (req, res) => {
     try {
+        const { user_id } = req.params.user_id;
+      
         
+        const sql = /* sql */`
+            delete from users
+            where user_id = ?
+        `;
+
+        const results = await getResults(sql, [user_id]);
+
+        return res.status(200).send({
+            message: 'successfully deleted user',
+        });
     } catch (error) {
         console.error(error);
 
