@@ -26,10 +26,72 @@ export const getAllNotesByUser = async (req, res) => {
     }
 };
 
-export const getSingleNotes = async (req, res) => {};
+export const getSingleNote = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.error(error);
 
-export const createNote = async (req, res) => {};
+        return res.status(500).send({
+            message: 'Internal Server Error',
+        });
+    }
+};
 
-export const updateNote = async (req, res) => {};
+export const createNote = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.error(error);
 
-export const deleteNote = async (req, res) => {};
+        return res.status(500).send({
+            message: 'Internal Server Error',
+        });
+    }
+};
+
+export const updateNote = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            message: 'Internal Server Error',
+        });
+    }
+};
+
+export const deleteNote = async (req, res) => {
+    try {
+        const { note_id } = req.params.note_id;
+
+        if (!note_id) {
+            return res.status(400).send({
+                message: 'note id is required'
+            });
+        }
+
+        const sql = /* sql */`
+            delete from notes where note_id = ?
+        `;
+
+        const results = await getResults(sql, [note_id]);
+
+        if (results.affectedRows === 0) {
+            return res.status(404).send({
+                message: 'note not found'
+            });
+        }
+
+        return res.status(200).send({
+            message: 'note deleted successfully'
+        })
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            message: 'Internal Server Error',
+        });
+    }
+};
