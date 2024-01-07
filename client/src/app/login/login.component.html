@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="login-card">
+    <div class="card-header">
+        <div class="icon">
+            <img src="../../assets/icons/logo.svg" alt="logo" />
+        </div>
+        <div class="card-title">create an account</div>
+        <p>Start your 30-day free trial.</p>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="loginForm"class="login-form" (submit)="login()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" placeholder="Enter your name" >
+            </div>
+            <div class="form-group">
+                <label for="email">email</label>
+                <input id="email" type="text" placeholder="Enter your email" >
+            </div>
+       
+            <div class="form-group">
+                <button class="block-primary">get started</button>
+            </div>
+        </form>
+    </div>
+</div>
