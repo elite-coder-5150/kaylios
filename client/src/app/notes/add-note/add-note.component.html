@@ -1,0 +1,25 @@
+<div class="add-note-card">
+    <div class="card-header"></div>
+
+    <div class="card-body">
+        <form [formGroup]="addNoteForm" (ngSubmit)="onSubmit()" class="add-form-note">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter the title">
+            </div>
+
+
+            <div class="form-group">
+                <label for="note">Note:</label>
+                <textarea id="note" placeholder="Enter your note"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="button-group">
+                    <button class="md-danger">cancel</button>
+                    <button class="md-primary">submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="card-footer"></footer>
+</div>
