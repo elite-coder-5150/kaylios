@@ -1,0 +1,11 @@
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d8d5d0;
+    float: left;
+    &.checked {
+        background: url('../../assets/icons/checked.svg') no-repeat;
+        width: 18px;
+        height: 18px;
+    }
+}
