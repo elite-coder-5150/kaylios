@@ -1,0 +1,114 @@
+@import "../global-styles/vars";
+@import "../global-styles/mixins";
+
+.otp-form {
+    max-width: 318px;
+    margin: 0 auto;
+    input {
+        float: left;
+        padding: 10px 8px;
+        width: 64px;
+        height: 60px;
+        margin-right: 20px;
+        @include border('all', 2px, solid, $clr-primary);
+        margin-bottom: 24px;
+        &::after {
+            clear: both;
+            content: '';
+        }
+
+        &.last {
+            margin-right: 0;
+        }
+    }
+
+    .form-group {
+        margin-top: 32px;
+    }
+
+    .button-group {
+        button {
+            &.block-primary {
+                background: $clr-primary;
+                width: 100%;
+                color: #fff;
+                padding: 10px;
+                font-size:16px;
+                text-transform: capitalize;
+                font-weight: 600;
+                
+                @include border('all', 1px, solid, $clr-primary);
+            }
+            
+            &.block-secondary {
+                background: $clr-light-bg;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $clr-nav-text;
+                font-weight: normal;
+                
+                margin-top: 24px;
+                font-size:14px;
+                text-transform: capitalize;
+                font-weight: 600;
+                
+
+            }
+
+           
+            
+        }
+        flex-direction: row;
+    }
+}
+
+.otp-card {
+    max-width: 420px;
+    margin: 96px auto 0 auto;
+   
+    .icon-md {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+
+        .email-icon {
+            background: url('../../assets/icons/email-icon.svg') no-repeat;
+            width: 70px;
+            height: 70px; 
+        }
+    }
+
+    .card-title {
+        @include font-size(30);
+
+        text-align: center;
+        margin-top: 24px;
+        text-transform: capitalize;
+    }
+
+    .validation-text {
+        text-align: center;
+    }
+
+    .primary-link {
+        color: $clr-primary;
+        opacity: 0.75;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    
+}
+
+.resend-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 32px;
+
+    a {
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+}
