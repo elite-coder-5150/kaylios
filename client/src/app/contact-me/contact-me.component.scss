@@ -1,8 +1,14 @@
 @import "../global-styles/base";
+@import "../global-styles/vars";
+@import "../global-styles/typography";
 .contact-card {
-    width: 320px;
+    width: 480px;
     margin: 0 auto;
+    padding-top: 96px;
 
+    .contact-form {
+        margin-top: 96px;
+    }
     label {
         display: block;
         font-size: 14px;
@@ -13,16 +19,31 @@
         width: 224px;
         height: 24px;
         padding: 14px;
+        border: 1px solid $clr-base-border;
     }
 
     .email,
-    .phone-number {
+    .phone-number,
+    .message {
         width: 480px;
         height: 24px;
         padding: 14px;
+         border: 1px solid $clr-base-border;
+    }
+    .message {
+        resize: none;
+        height: 110px;
+
     }
 
     input {
+
+        border: none;
         font-size: 16px;
     }
+
+    .form-group {
+        margin-bottom: 24px;
+    }
+    
 }
