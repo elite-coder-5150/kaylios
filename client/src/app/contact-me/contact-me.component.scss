@@ -1,0 +1,28 @@
+@import "../global-styles/base";
+.contact-card {
+    width: 320px;
+    margin: 0 auto;
+
+    label {
+        display: block;
+        font-size: 14px;
+    }
+
+    #f-name,
+    #l-name {
+        width: 224px;
+        height: 24px;
+        padding: 14px;
+    }
+
+    .email,
+    .phone-number {
+        width: 480px;
+        height: 24px;
+        padding: 14px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+}
