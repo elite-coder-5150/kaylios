@@ -25,15 +25,23 @@
             <div class="row">
                 <div class="form-group">
                     <label for="phone">Phone number</label>
-                   <input type="text" id="phone" class="phone-number">
+                   <input type="text" id="phone" class="phone-number" placeholder="1 + (309) 555-1212">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="msg"class="message"></textarea>
+                    <textarea id="msg"class="message" placeholder="What's on your mind?"></textarea>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <ng-custom-checkbox></ng-custom-checkbox>
+                    <p class="form-text">You agree to our friendly <a href="#" class="primary-link"></a></p>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="form-grpup">
                    <button type="submit" [disabled]="!contactForm.valid" class="lg-primary"></button>
