@@ -1,5 +1,9 @@
 <div class="contact-card">
-    <div class="card-header"></div>
+    <div class="card-header">
+        <div class="supportive-text">contact us</div>
+        <h1 class="card-title">Get in touch</h1>
+        <p class="large-text">We’d love to hear from you. Please fill out this form.</p>
+    </div>
     <div class="card-body">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
             <div class="row">
@@ -26,12 +30,13 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <!----- message ----->
+                    <label for="message">Message</label>
+                    <textarea id="msg"class="message"></textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="form-grpup">
-                   <button type="submit" [disabled]="!contactForm.valid" class="lg-primary"></button>>
+                   <button type="submit" [disabled]="!contactForm.valid" class="lg-primary"></button>
                 </div>
             </div>
         </form>
