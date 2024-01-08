@@ -1,0 +1,14 @@
+"filename", "language", "TypeScript", "HTML", "SCSS", "comment", "blank", "total"
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app.component.html", "HTML", 0, -1, 0, 0, 1, 0
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app.module.ts", "TypeScript", -4, 0, 0, 0, 2, -2
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/contact-me/contact-me.component.html", "HTML", 0, -1, 0, 1, 0, 0
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer-primary/footer-primary.component.html", "HTML", 0, -3, 0, 0, -1, -4
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer-primary/footer-primary.component.scss", "SCSS", 0, 0, 0, 0, -1, -1
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer-primary/footer-primary.component.spec.ts", "TypeScript", -17, 0, 0, 0, -5, -22
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer-primary/footer-primary.component.ts", "TypeScript", -8, 0, 0, 0, -3, -11
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.html", "HTML", 0, 0, 0, 0, -1, -1
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/add-user/add-user.component.html", "HTML", 0, -1, 0, 0, -1, -2
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/add-user/add-user.component.scss", "SCSS", 0, 0, 0, 0, -1, -1
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/add-user/add-user.component.spec.ts", "TypeScript", -17, 0, 0, 0, -5, -22
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/add-user/add-user.component.ts", "TypeScript", -8, 0, 0, 0, -3, -11
+"Total", "-", -54, -6, 0, 1, -18, -77
