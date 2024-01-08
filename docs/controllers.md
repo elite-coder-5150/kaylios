@@ -28,7 +28,23 @@
 ### Relation Controller
 
 #### Methods
-1. unfriend -
+1. unfriend - the `unfriend` function handles the removal of the friendship between two entities. It uses an SQL query to delete records from the `relation` table bnased on speicific criteria.
+
+#### Input parameters
+- req (object): the request object with the friendship removal details in the request body.
+    - req.body (object) an object with:
+        - from (string): identifier of the entity initializing the unfriend action.
+        - to (string): identifier of the entity to be unfriended.
+- res (object):  the respomse object to semnd the result back to the client.
+
+#### SQL Query:
+deletes records from the `relation` table where status is 'f'   and the specified entities
+involved in the relationship.
+
+### Usage:
+```js
+    router.get('/relation/unfriend/:user_id', rc.unfriend);
+```
 
 ```js
 export const unfriend = async (req, res) => {
