@@ -23,6 +23,7 @@ import { NotesTableComponent } from './notes/notes-table/notes-table.component';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioItemComponent } from './portfolio/portfolio-item/portfolio-item.component';
+import { CustomCheckboxComponent } from './custom-checkbox/custom-checkbox.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -44,6 +45,7 @@ import { PortfolioItemComponent } from './portfolio/portfolio-item/portfolio-ite
         AddNoteComponent,
         PortfolioComponent,
         PortfolioItemComponent,
+        CustomCheckboxComponent,
     ],
     imports: [
         BrowserModule,
