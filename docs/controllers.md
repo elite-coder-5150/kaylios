@@ -42,10 +42,11 @@ deletes records from the `relation` table where status is 'f'   and the specifie
 involved in the relationship.
 
 ### Usage:
-```js
+```javascript
     router.get('/relation/unfriend/:user_id', rc.unfriend);
 ```
 
+### Function
 ```js
 export const unfriend = async (req, res) => {
     try {
@@ -78,8 +79,24 @@ export const unfriend = async (req, res) => {
 };
 ```
 
-2. block - 
+2. block - this function is reponsible for blocking a relationship between two entities by inserting a new record into the relation table with the status of 'b'. This function is based on a simple  condigional check of the `blocked` variable, assuming it is always set to `true`.
 
+#### Input parameters
+- req (object): the request object with the friendship removal details in the request body.
+    - req.body (object) an object with:
+        - from (string): identifier of the entity initializing the unfriend action.
+        - to (string): identifier of the entity to be unfriended.
+- res (object):  the respomse object to semnd the result back to the client.
+
+####  Operations
+If the `blocked` variable is true, the function performs the following steps:
+    1. `SQL Query Execution` - inserts a new record into the relation table with the  specified to. from. and a status of 'b'
+    2. `response handling` - returns a 200 ok status with the query result and a success message inticating that the blocking was successful.
+
+### Return value:
+- returns a 200 ok status with the query result and success message if the blocking was successful.
+
+### Function
 ```js
 export const block = async (req, res) => {
     const { from, to } = req.body;
