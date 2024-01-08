@@ -6,9 +6,25 @@
 
 .card-title {
     font-size: 30px;
+    text-align: center;
 }
 label {
     display: block;
     font-size: 14px;
     margin-bottom: 6px;
+    color: $clr-lable-text
+}
+
+.supportive-text {
+    color: $clr-primary;
+    text-align: center;
+    text-transform: capitalize;
+    bottom: 6px;
+
+}
+
+.large-text {
+    font-size: 18px;;
+    text-align: center;
+    margin-top: 24px;
 }
