@@ -46,6 +46,8 @@ involved in the relationship.
     router.get('/relation/unfriend/:user_id', rc.unfriend);
 ```
 
+---
+
 ### Function
 ```js
 export const unfriend = async (req, res) => {
@@ -78,6 +80,8 @@ export const unfriend = async (req, res) => {
     }
 };
 ```
+
+---
 
 2. block - this function is reponsible for blocking a relationship between two entities by inserting a new record into the relation table with the status of 'b'. This function is based on a simple  condigional check of the `blocked` variable, assuming it is always set to `true`.
 
@@ -117,8 +121,30 @@ export const block = async (req, res) => {
     }
 };
 ```
+### Example usage:
+```javascript
+router.post('/relation/block/:receiver_id', rc.block);
+```
 
-3. unblock - 
+3. unblock - This function is reponsible for removing the blocking status between two entities  in the `relation` table of a database. it execu tes a SQL query to delete the specific blocking record based on the provided identifiers. The function returns a successful message along with the query result.
+
+#### Input parameters
+- req (object): the request object with the friendship removal details in the request body.
+    - req.body (object) an object with:
+        - from (string): identifier of the entity initializing the unfriend action.
+        - to (string): identifier of the entity to be unfriended.
+- res (object):  the respomse object to semnd the result back to the client.
+
+#### operations:
+1. `SQL query execution` - executes and SQL query to delete records from the `relation` table where the `from` and `to` fields match the specified identifiers. and the status 'b'
+2. `response handling` - returns a 200 status code with a success message and the query result.
+
+#### Example usage:
+```js
+router.post('/relation/unblock/:receiver_id', nc.unblock);
+```
+
+### function.
 
 ```js
 export const unblock = async (req, res) => {
@@ -138,8 +164,9 @@ export const unblock = async (req, res) => {
     return true;
 };
 ```
+---
 
-4. getFriends -
+4. getFriends - this function is responsible for ret rieving a user's friends and blocked entities based on a specific status from the `relation` table in a database
 
 ```js
 export const getFriends = async (req, res) => {
