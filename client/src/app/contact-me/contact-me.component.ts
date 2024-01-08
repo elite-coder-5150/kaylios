@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import axios from 'axios';
-import { parse, parsePhoneNumberFromString } from 'libphonenumber-js'
+import { parsePhoneNumberFromString } from 'libphonenumber-js'
 @Component({
     selector: 'ng-contact-me',
     templateUrl: './contact-me.component.html',
@@ -40,7 +40,7 @@ export class ContactMeComponent {
         const phoneNumber = this.contactForm.get('phoneNumber')?.value;
         const parsedPhoneNumber = parsePhoneNumberFromString(phoneNumber, 'US');
 
-        
+
 
     }
 }
