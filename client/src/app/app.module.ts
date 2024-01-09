@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './register/register.component';
@@ -24,6 +25,9 @@ import { NotesTableComponent } from './notes/notes-table/notes-table.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioItemComponent } from './portfolio/portfolio-item/portfolio-item.component';
 import { CustomCheckboxComponent } from './custom-checkbox/custom-checkbox.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { SearchComponent } from './search/search.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -46,12 +50,16 @@ import { CustomCheckboxComponent } from './custom-checkbox/custom-checkbox.compo
         PortfolioComponent,
         PortfolioItemComponent,
         CustomCheckboxComponent,
+        NewsletterComponent,
+        SearchComponent,
+        SearchResultsComponent,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         FormsModule,
         ReactiveFormsModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent],
