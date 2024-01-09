@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import axios from 'axios';
 @Component({
-  selector: 'app-search',
+  selector: 'ng-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
@@ -16,5 +17,16 @@ export class SearchComponent {
         Validators.maxLength(500)
       ])
     })
+  }
+
+  onSubmitSearch() {
+    const searchTerm = this.searchForm.get('searchTerm')?.value;
+
+    // TODO: SEND THIS TO THE SERVER
+    const formData = {
+      searchTerm: searchTerm
+    };
+
+    axios.post('/api/search', formData);
   }
 }
