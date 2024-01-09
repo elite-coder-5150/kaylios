@@ -29,11 +29,19 @@
         height: 24px;
         padding: 14px;
          border: 1px solid $clr-base-border;
+
+         &:focus {
+            outline: none;;
+         }
     }
     .message {
         resize: none;
         height: 110px;
+        font-family: inherit;
 
+        &:focus {
+            outline: 0;
+        }
     }
 
     input {
@@ -44,6 +52,23 @@
 
     .form-group {
         margin-bottom: 24px;
+
+        .block-primary {
+            width: 420px;
+            padding: 10px;
+            background: $clr-primary;
+            border: 1px solid $clr-primary;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: $clr-light-text;
+            // font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 8px;
+        }
+
+        button {
+            border: none;
+        }
     }
     
 }
