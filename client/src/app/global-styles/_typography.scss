@@ -1,6 +1,7 @@
 @import "vars";
 .primary-link {
     color: $clr-primary;
+    text-decoration: none;
 
 }
 
@@ -27,4 +28,11 @@ label {
     font-size: 18px;;
     text-align: center;
     margin-top: 24px;
+}
+
+.form-text {
+    font-size: 14px;
+    width: 420px;
+    margin-left: 10px;
+    color: #475467;
 }
