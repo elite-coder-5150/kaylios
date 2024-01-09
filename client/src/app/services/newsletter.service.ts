@@ -8,5 +8,5 @@ export class NewsletterService {
 
   constructor() { }
 
-  // subscribe(email:string): Observable {}
+  subscribe(email:string) {}
 }
