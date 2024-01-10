@@ -55,3 +55,9 @@ use `kaylios`;
 alter table `notes`
     add column `user_id` int(11) after `note_id`;
 
+use `kaylios`;
+create table `newsletter` (
+    `newsletter_id` int(11) AUTO_INCREMENT PRIMARY KEY,
+    `email` varchar(30) NOT NULL,
+    `joined_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+)
