@@ -52,7 +52,7 @@ create table `notes` (
 )
 
 use `kaylios`;
-alter table `notes`
+alter table `notes`00
     add column `user_id` int(11) after `note_id`;
 
 use `kaylios`;
