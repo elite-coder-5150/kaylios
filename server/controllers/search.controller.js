@@ -33,7 +33,33 @@ export const searchCategory = async (req, res) => {};
 
 export const searchTags = async (req, res) => {};
 
-export const searchNotes = async (req, res) => {};
+export const searchNotes = async (req, res) => {
+    try {
+        const searchTerm = req.query.searchTerm;
+
+        const sql = /* sql */`
+            select * from notes where title like ? or content like ?
+        `;
+
+        const notes = await getResults(sql, ['%${searchTerm}%', '%${searchTerm}%']);
+
+        if (notes.length === 0) {
+            return res.status(404).send({
+                error: 'notes not found'
+            });
+        }
+
+        return res.status(200).send({
+            data: notes
+        })
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            error: 'Internal Server Error'
+        })
+    }
+};
 
 export const searchGroups = async (req, res) => {};
 
