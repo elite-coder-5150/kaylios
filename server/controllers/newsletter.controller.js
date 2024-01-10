@@ -30,6 +30,6 @@ export const createNewsletter = async  (req, res) => {
     }
 };
 
-export const unsubscribe = async (req, res) => {
-    
-};
+export const unsubscribe = async (req, res) => {};
+
+export const bulkSendEmail = async (req, res) => {};
