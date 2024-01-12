@@ -43,11 +43,6 @@ export const searchNotes = async (req, res) => {
 
         const notes = await getResults(sql, ['%${searchTerm}%', '%${searchTerm}%']);
 
-        if (notes.length === 0) {
-            return res.status(404).send({
-                error: 'notes not found'
-            });
-        }
 
         return res.status(200).send({
             data: notes
@@ -63,4 +58,24 @@ export const searchNotes = async (req, res) => {
 
 export const searchGroups = async (req, res) => {};
 
-export const searchVideos = async (req, res) => {};
+export const searchVideos = async (req, res) => {
+    try {
+        const searchTerm = req.query.searchTerm;
+
+        const sql = /* sql */`
+            select * from videos where title like ? or description like ?
+        `;
+
+        const videos = await getResults(sql, ['%${searchTerm}%','%${searchTerm}%']);
+
+        return res.status(200).send({
+            data: videos
+        });
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            error: 'internal server error'
+        });
+    }
+};
