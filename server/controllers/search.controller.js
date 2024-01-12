@@ -29,9 +29,48 @@ export const searchUsers = async (req, res) => {
     }
 };
 
-export const searchCategory = async (req, res) => {};
+export const searchCategory = async (req, res) => {
+    try {
+        const searchTerm = req.query.searchTerm;
 
-export const searchTags = async (req, res) => {};
+        const sql = /* sql */`
+            select * from category where category_name like ?
+        `;
+        const category = await getResults(sql, ['%${searchTerm}%']);
+
+        return res.status(200).send({
+            data: category
+        });
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            error: 'internal server error'
+        });
+    }
+};
+
+export const searchTags = async (req, res) => {
+    try {
+        const searchTerm = req.query.searchTerm;
+
+        const sql = /* sql */`
+            select * from tags where tag_name like ?
+        `;
+
+        const tags = await getResults(sql, ['%${searchTerm}%']);
+
+        return res.status(200).send({
+            data: tags
+        });
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            error: 'internal server error'
+        });
+    }
+};
 
 export const searchNotes = async (req, res) => {
     try {
@@ -56,7 +95,27 @@ export const searchNotes = async (req, res) => {
     }
 };
 
-export const searchGroups = async (req, res) => {};
+export const searchGroups = async (req, res) => {
+    try {
+        const searchTerm = req.query.searchTerm;
+
+        const sql = /* sql */`
+            select * from groups where group_name like ?
+        `;
+
+        const groups = await getResults(sql, ['%${searchTerm}%']);
+
+        return res.status(200).send({
+            data: groups
+        });
+    } catch (error) {
+        console.error(error);
+
+        return res.status(500).send({
+            error: 'internal server error'
+        });
+    }
+};
 
 export const searchVideos = async (req, res) => {
     try {
