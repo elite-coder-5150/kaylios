@@ -2,13 +2,13 @@ import { getResults } from '../utility/getResults';
 
 export const searchUsers = async (req, res) => {
     try {
-        const searchTerm = req.query.searchTerm;
+        const { username } = req.query;
 
         const sql = /* sql */`
             select * from users where username LIKE ?
         `;
 
-        const users = await getResults(sql, ['%${searchTerm}%']);
+        const users = await getResults(sql, [username]);
 
         if (users.length === 0) {
             return res.status(404).send({
@@ -31,12 +31,12 @@ export const searchUsers = async (req, res) => {
 
 export const searchCategory = async (req, res) => {
     try {
-        const searchTerm = req.query.searchTerm;
+        const { category_name} = req.query;
 
         const sql = /* sql */`
             select * from category where category_name like ?
         `;
-        const category = await getResults(sql, ['%${searchTerm}%']);
+        const category = await getResults(sql, [category_name]);
 
         return res.status(200).send({
             data: category
@@ -52,13 +52,13 @@ export const searchCategory = async (req, res) => {
 
 export const searchTags = async (req, res) => {
     try {
-        const searchTerm = req.query.searchTerm;
+        const { tag_name } = req.query;
 
         const sql = /* sql */`
             select * from tags where tag_name like ?
         `;
 
-        const tags = await getResults(sql, ['%${searchTerm}%']);
+        const tags = await getResults(sql, [tag_name]);
 
         return res.status(200).send({
             data: tags
@@ -74,13 +74,13 @@ export const searchTags = async (req, res) => {
 
 export const searchNotes = async (req, res) => {
     try {
-        const searchTerm = req.query.searchTerm;
+        const { title, content } = req.query;
 
         const sql = /* sql */`
             select * from notes where title like ? or content like ?
         `;
 
-        const notes = await getResults(sql, ['%${searchTerm}%', '%${searchTerm}%']);
+        const notes = await getResults(sql, [title, content]);
 
 
         return res.status(200).send({
@@ -97,13 +97,13 @@ export const searchNotes = async (req, res) => {
 
 export const searchGroups = async (req, res) => {
     try {
-        const searchTerm = req.query.searchTerm;
+        const { group_name } = req.query;
 
         const sql = /* sql */`
             select * from groups where group_name like ?
         `;
 
-        const groups = await getResults(sql, ['%${searchTerm}%']);
+        const groups = await getResults(sql, [group_name]);
 
         return res.status(200).send({
             data: groups
@@ -119,13 +119,13 @@ export const searchGroups = async (req, res) => {
 
 export const searchVideos = async (req, res) => {
     try {
-        const searchTerm = req.query.searchTerm;
+        const {title, description } = req.query.searchTerm;
 
         const sql = /* sql */`
             select * from videos where title like ? or description like ?
         `;
 
-        const videos = await getResults(sql, ['%${searchTerm}%','%${searchTerm}%']);
+        const videos = await getResults(sql, [title, description]);
 
         return res.status(200).send({
             data: videos
