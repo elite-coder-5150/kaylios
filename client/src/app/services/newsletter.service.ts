@@ -6,13 +6,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class NewsletterService {
-  private apiUrl = "http://localhost:3000/newsletter";
+  private apiUrl = "http://localhost:8080/newsletter";
+
   constructor(private http: HttpClient) { }
 
-
-
-
-  subscribe(newsletterFormData: NewsletterFormData): Observable<any> {
-    return this.http.post(this.apiUrl, newsletterFormData )
+  subscribe(userName: string, email: string): Observable<any> {
+    return this.http.post(this.apiUrl, {userName, email });
   }
 }
