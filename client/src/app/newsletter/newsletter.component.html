@@ -1,1 +1,20 @@
-<p>newsletter works!</p>
+<div class="newsletter-card">
+    <div class="container">
+        <div class="newsletter-card-header">
+            <h1 class="card-title primary">Join our newsletter</h1>
+            <p class="large-text light-text">join now and get 10% your first order</p>
+        </div>
+        <div class="newsletter-card-body">
+            <form (ngSubmit)="onSubmit()" class="newsletter-signup">
+                <div class="form-group">
+                    <label for="username">First name</label>
+                    <input type="text" id="username" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
