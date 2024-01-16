@@ -19,15 +19,23 @@ header {
                 flex: 6
             }
 
+            &:nth-child(1) {
+                flex: 1;
+            }
+
         }
         .logo {
             display: flex;
-            max-width: 50px;
+            max-width: 100px;
             line-height: 35px;
+            margin-right: 10px;
+            .img {
+                margin-right: 10px;
+            }
             .logo-text {
                 font-size: px-to-rem(20);
                 line-height: px-to-rem(40);
-                margin-left: px-to-rem(10);
+               
             }
         }
 
