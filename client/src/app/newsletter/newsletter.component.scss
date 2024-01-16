@@ -1,7 +1,16 @@
+@import "../global-styles/vars";
+@import "../global-styles/typography";
+
 .success-message {
     background: #4caf50;
     color: #fff;
     padding: 15px;
     text-align: center;
     border: 1px solid #4caf50;
+}
+
+.newsletter-card {
+    padding: 96px 0;
+    background: $clr-primary;
+    margin: 0 auto;
 }
