@@ -1,15 +1,25 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormDataBase } from '../models/simple-form-data';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  loginForm: FormGroup;
+  loginForm: any = {
+    username: null,
+    password: null,
+  };
 
-  constructor(private fb: FormBuilder) {
-    this.loginForm = fb.group({});
+  loginFormData: FormDataBase = {
+    isSuccessful: false,
+    signupFailed: false,
+    loginFailed: false,
+    errorMsg: ''
+  };
+
+  constructor() {
+
   }
 
   login() {}
