@@ -1,9 +1,0 @@
-"filename", "language", "JavaScript", "SQL", "comment", "blank", "total"
-"/Users/darrellparkhouse/projects/angular/kaylios/server/controllers/follow_system.controller.js", "JavaScript", 5, 0, 0, 1, 6
-"/Users/darrellparkhouse/projects/angular/kaylios/server/controllers/relation.controller.js", "JavaScript", 35, 0, 3, 7, 45
-"/Users/darrellparkhouse/projects/angular/kaylios/server/controllers/search.controller.js", "JavaScript", 6, 0, 0, 5, 11
-"/Users/darrellparkhouse/projects/angular/kaylios/server/controllers/user.controller.js", "JavaScript", 7, 0, 0, 1, 8
-"/Users/darrellparkhouse/projects/angular/kaylios/server/database/db.sql", "SQL", 0, 0, 0, 2, 2
-"/Users/darrellparkhouse/projects/angular/kaylios/server/routes/search.js", "JavaScript", 10, 0, 0, 3, 13
-"/Users/darrellparkhouse/projects/angular/kaylios/server/routes/user.js", "JavaScript", 9, 0, 0, 3, 12
-"Total", "-", 72, 0, 3, 22, 97

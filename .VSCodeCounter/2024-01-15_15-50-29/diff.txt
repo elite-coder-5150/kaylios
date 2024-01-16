@@ -1,0 +1,57 @@
+Date : 2024-01-15 15:50:29
+Directory : /Users/darrellparkhouse/projects/angular/kaylios
+Total : 17 files,  213 codes, -1 comments, 48 blanks, all 260 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |         11 |        125 |         -1 |         24 |        148 |
+| JavaScript |          3 |         82 |          0 |         23 |        105 |
+| SCSS       |          2 |          7 |          0 |          0 |          7 |
+| HTML       |          1 |         -1 |          0 |          1 |          0 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                 | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                    |         17 |        213 |         -1 |         48 |        260 |
+| client                                                                                               |          9 |         94 |         -1 |         20 |        113 |
+| client/src                                                                                           |          9 |         94 |         -1 |         20 |        113 |
+| client/src/app                                                                                       |          9 |         94 |         -1 |         20 |        113 |
+| client/src/app/footer                                                                                |          1 |          0 |          0 |          1 |          1 |
+| client/src/app/models                                                                                |          1 |          6 |          0 |          0 |          6 |
+| client/src/app/newsletter                                                                            |          3 |         20 |          0 |          2 |         22 |
+| client/src/app/register                                                                              |          1 |         28 |          0 |          4 |         32 |
+| client/src/app/services                                                                              |          3 |         40 |         -1 |         13 |         52 |
+| server                                                                                               |          8 |        119 |          0 |         28 |        147 |
+| server/controllers                                                                                   |          1 |        103 |          0 |         26 |        129 |
+| server/models                                                                                        |          3 |         13 |          0 |          2 |         15 |
+| server/routes                                                                                        |          2 |          0 |          0 |          0 |          0 |
+| server/utility                                                                                       |          2 |          3 |          0 |          0 |          3 |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                             | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer/footer.component.scss         | SCSS       |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/simple-form-data.ts           | TypeScript |          6 |          0 |          0 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.html | HTML       |         -1 |          0 |          1 |          0 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.scss | SCSS       |          7 |          0 |         -1 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.ts   | TypeScript |         14 |          0 |          2 |         16 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/register/register.component.ts       | TypeScript |         28 |          0 |          4 |         32 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/auth.service.spec.ts        | TypeScript |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/auth.service.ts             | TypeScript |         26 |          0 |          7 |         33 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/newsletter.service.ts       | TypeScript |          2 |         -1 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/search.controller.js             | JavaScript |        103 |          0 |         26 |        129 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/models/group.ts                              | TypeScript |          4 |          0 |          2 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/models/user.ts                               | TypeScript |          4 |          0 |          0 |          4 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/models/video.ts                              | TypeScript |          5 |          0 |          0 |          5 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/routes/search.js                             | JavaScript |        -10 |          0 |         -3 |        -13 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/routes/search.ts                             | TypeScript |         10 |          0 |          3 |         13 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/utility/getResults.js                        | JavaScript |        -11 |          0 |          0 |        -11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/utility/utility.ts                           | TypeScript |         14 |          0 |          0 |         14 |
+| Total                                                                                                |            |        213 |         -1 |         48 |        260 |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

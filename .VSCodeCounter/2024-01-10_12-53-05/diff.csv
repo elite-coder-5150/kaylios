@@ -1,0 +1,10 @@
+"filename", "language", "TypeScript", "SCSS", "SQL", "JavaScript", "comment", "blank", "total"
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/newsletter-form-data.ts", "TypeScript", 4, 0, 0, 0, 0, 0, 4
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/search-results.ts", "TypeScript", 6, 0, 0, 0, 0, 1, 7
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.ts", "TypeScript", 9, 0, 0, 0, -6, 2, 5
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search-results/search-results.component.scss", "SCSS", 0, 4, 0, 0, 0, -1, 3
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search-results/search-results.component.ts", "TypeScript", 2, 0, 0, 0, 0, -2, 0
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/newsletter.service.ts", "TypeScript", 4, 0, 0, 0, 0, -2, 2
+"/Users/darrellparkhouse/projects/angular/kaylios/server/controllers/newsletter.controller.js", "JavaScript", 0, 0, 0, 27, 0, 8, 35
+"/Users/darrellparkhouse/projects/angular/kaylios/server/database/db.sql", "SQL", 0, 0, 8, 0, 0, 0, 8
+"Total", "-", 25, 4, 8, 27, -6, 6, 64

@@ -1,0 +1,17 @@
+"filename", "language", "HTML", "SCSS", "TypeScript", "Markdown", "JavaScript", "Properties", "JSON", "comment", "blank", "total"
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app-routing.module.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 5
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/contact-me/contact-me.component.html", "HTML", -2, 0, 0, 0, 0, 0, 0, 0, 2, 0
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_mixins.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 2, 2
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_sections.scss", "SCSS", 0, 3, 0, 0, 0, 0, 0, 0, 0, 3
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.html", "HTML", -1, 0, 0, 0, 0, 0, 0, 0, 0, -1
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.html", "HTML", 9, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.scss", "SCSS", 0, 1, 0, 0, 0, 0, 0, 0, -1, 0
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/login/login.component.html", "HTML", 3, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/login/login.component.scss", "SCSS", 0, 5, 0, 0, 0, 0, 0, 2, 1, 8
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio.component.html", "HTML", -1, 0, 0, 0, 0, 0, 0, 0, 1, 0
+"/Users/darrellparkhouse/projects/angular/kaylios/docs/controllers.md", "Markdown", 0, 0, 0, 30, 0, 0, 0, 0, 12, 42
+"/Users/darrellparkhouse/projects/angular/kaylios/server/.env", "Properties", 0, 0, 0, 0, 0, 3, 0, 0, 0, 3
+"/Users/darrellparkhouse/projects/angular/kaylios/server/controllers/newsletter.controller.js", "JavaScript", 0, 0, 0, 0, 36, 0, 0, 0, 8, 44
+"/Users/darrellparkhouse/projects/angular/kaylios/server/package-lock.json", "JSON", 0, 0, 0, 0, 0, 0, 825, 0, 1, 826
+"/Users/darrellparkhouse/projects/angular/kaylios/server/package.json", "JSON", 0, 0, 0, 0, 0, 0, 7, 0, 0, 7
+"Total", "-", 8, 9, 5, 30, 36, 3, 832, 2, 27, 952

@@ -1,0 +1,235 @@
+Date : 2024-01-15 20:03:25
+Directory : /Users/darrellparkhouse/projects/angular/kaylios
+Total : 157 files,  16594 codes, 46 comments, 779 blanks, all 17419 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          6 |     13,079 |          2 |          6 |     13,087 |
+| TypeScript         |         77 |      1,161 |          3 |        294 |      1,458 |
+| JavaScript         |         10 |        804 |         29 |        187 |      1,020 |
+| SCSS               |         30 |        584 |          9 |        121 |        714 |
+| Markdown           |          3 |        412 |          0 |        110 |        522 |
+| HTML               |         25 |        375 |          2 |         47 |        424 |
+| XML                |          4 |         90 |          0 |          4 |         94 |
+| SQL                |          1 |         57 |          0 |          9 |         66 |
+| JSON with Comments |          1 |         32 |          1 |          1 |         34 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                      | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                         |        157 |     16,594 |         46 |        779 |     17,419 |
+| . (Files)                                                                                                                 |          1 |          1 |          0 |          0 |          1 |
+| client                                                                                                                    |        138 |     15,286 |         17 |        481 |     15,784 |
+| client (Files)                                                                                                            |          7 |     13,113 |          3 |         20 |     13,136 |
+| client/src                                                                                                                |        131 |      2,173 |         14 |        461 |      2,648 |
+| client/src (Files)                                                                                                        |          3 |         32 |          3 |         10 |         45 |
+| client/src/app                                                                                                            |        124 |      2,051 |         11 |        447 |      2,509 |
+| client/src/app (Files)                                                                                                    |          6 |        150 |          0 |         22 |        172 |
+| client/src/app/check-email                                                                                                |          4 |         47 |          1 |         13 |         61 |
+| client/src/app/contact-me                                                                                                 |          4 |        176 |          1 |         26 |        203 |
+| client/src/app/custom-checkbox                                                                                            |          4 |         46 |          0 |         10 |         56 |
+| client/src/app/footer                                                                                                     |          4 |        127 |          0 |         15 |        142 |
+| client/src/app/forgot-password                                                                                            |          4 |         43 |          0 |         13 |         56 |
+| client/src/app/global-styles                                                                                              |          5 |        112 |          0 |         19 |        131 |
+| client/src/app/header                                                                                                     |          4 |        145 |          4 |         31 |        180 |
+| client/src/app/home                                                                                                       |          4 |         28 |          0 |          9 |         37 |
+| client/src/app/login                                                                                                      |          4 |        116 |          0 |         19 |        135 |
+| client/src/app/models                                                                                                     |          7 |         49 |          0 |          4 |         53 |
+| client/src/app/newsletter                                                                                                 |          4 |         92 |          0 |         17 |        109 |
+| client/src/app/notes                                                                                                      |         16 |        184 |          1 |         49 |        234 |
+| client/src/app/notes (Files)                                                                                              |          4 |         33 |          0 |         11 |         44 |
+| client/src/app/notes/add-note                                                                                             |          4 |         99 |          1 |         18 |        118 |
+| client/src/app/notes/edit-note                                                                                            |          4 |         26 |          0 |         10 |         36 |
+| client/src/app/notes/notes-table                                                                                          |          4 |         26 |          0 |         10 |         36 |
+| client/src/app/otp-check-email                                                                                            |          4 |        168 |          3 |         38 |        209 |
+| client/src/app/portfolio                                                                                                  |          8 |         53 |          0 |         20 |         73 |
+| client/src/app/portfolio (Files)                                                                                          |          4 |         27 |          0 |         10 |         37 |
+| client/src/app/portfolio/portfolio-item                                                                                   |          4 |         26 |          0 |         10 |         36 |
+| client/src/app/register                                                                                                   |          4 |        149 |          0 |         22 |        171 |
+| client/src/app/reset-password                                                                                             |          4 |         26 |          0 |         10 |         36 |
+| client/src/app/search                                                                                                     |          4 |         56 |          1 |         12 |         69 |
+| client/src/app/search-results                                                                                             |          4 |         32 |          0 |          7 |         39 |
+| client/src/app/services                                                                                                   |         14 |        174 |          0 |         61 |        235 |
+| client/src/app/user                                                                                                       |         12 |         78 |          0 |         30 |        108 |
+| client/src/app/user (Files)                                                                                               |          4 |         26 |          0 |         10 |         36 |
+| client/src/app/user/edit-user                                                                                             |          4 |         26 |          0 |         10 |         36 |
+| client/src/app/user/user-list                                                                                             |          4 |         26 |          0 |         10 |         36 |
+| client/src/assets                                                                                                         |          4 |         90 |          0 |          4 |         94 |
+| client/src/assets/icons                                                                                                   |          4 |         90 |          0 |          4 |         94 |
+| docs                                                                                                                      |          1 |        397 |          0 |         96 |        493 |
+| server                                                                                                                    |         17 |        910 |         29 |        202 |      1,141 |
+| server (Files)                                                                                                            |          2 |         37 |          0 |          5 |         42 |
+| server/controllers                                                                                                        |          6 |        756 |         29 |        176 |        961 |
+| server/database                                                                                                           |          1 |         57 |          0 |          9 |         66 |
+| server/models                                                                                                             |          3 |         13 |          0 |          2 |         15 |
+| server/routes                                                                                                             |          3 |         28 |          0 |          8 |         36 |
+| server/utility                                                                                                            |          2 |         19 |          0 |          2 |         21 |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                                  | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/projects/angular/kaylios/README.md                                                                | Markdown           |          1 |          0 |          0 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/README.md                                                         | Markdown           |         14 |          0 |         14 |         28 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/angular.json                                                      | JSON               |        107 |          0 |          1 |        108 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/package-lock.json                                                 | JSON               |     12,896 |          0 |          1 |     12,897 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/package.json                                                      | JSON               |         38 |          0 |          1 |         39 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app-routing.module.ts                                     | TypeScript         |         49 |          0 |          3 |         52 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app.component.html                                        | HTML               |          1 |          0 |          7 |          8 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app.component.scss                                        | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app.component.spec.ts                                     | TypeScript         |         25 |          0 |          5 |         30 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app.component.ts                                          | TypeScript         |          9 |          0 |          2 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/app.module.ts                                             | TypeScript         |         66 |          0 |          4 |         70 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/check-email/check-email.component.html                    | HTML               |         22 |          0 |          4 |         26 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/check-email/check-email.component.scss                    | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/check-email/check-email.component.spec.ts                 | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/check-email/check-email.component.ts                      | TypeScript         |          8 |          1 |          3 |         12 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/contact-me/contact-me.component.html                      | HTML               |         58 |          0 |          2 |         60 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/contact-me/contact-me.component.scss                      | SCSS               |         62 |          1 |         11 |         74 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/contact-me/contact-me.component.spec.ts                   | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/contact-me/contact-me.component.ts                        | TypeScript         |         39 |          0 |          8 |         47 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/custom-checkbox/custom-checkbox.component.html            | HTML               |          5 |          0 |          1 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/custom-checkbox/custom-checkbox.component.scss            | SCSS               |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/custom-checkbox/custom-checkbox.component.spec.ts         | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/custom-checkbox/custom-checkbox.component.ts              | TypeScript         |         12 |          0 |          3 |         15 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer/footer.component.html                              | HTML               |         72 |          0 |          1 |         73 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer/footer.component.scss                              | SCSS               |         30 |          0 |          6 |         36 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer/footer.component.spec.ts                           | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/footer/footer.component.ts                                | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.html            | HTML               |         11 |          0 |          3 |         14 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.scss            | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.spec.ts         | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.ts              | TypeScript         |         15 |          0 |          4 |         19 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_base.scss                                  | SCSS               |          4 |          0 |          0 |          4 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_icons.scss                                 | SCSS               |          5 |          0 |          2 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_mixins.scss                                | SCSS               |         50 |          0 |          5 |         55 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_typography.scss                            | SCSS               |         45 |          0 |         10 |         55 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_vars.scss                                  | SCSS               |          8 |          0 |          2 |         10 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.html                              | HTML               |         33 |          0 |          3 |         36 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.scss                              | SCSS               |         87 |          4 |         20 |        111 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.spec.ts                           | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.ts                                | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.html                                  | HTML               |          3 |          0 |          0 |          3 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.scss                                  | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.spec.ts                               | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.ts                                    | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/login/login.component.html                                | HTML               |         25 |          0 |          2 |         27 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/login/login.component.scss                                | SCSS               |         52 |          0 |          7 |         59 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/login/login.component.spec.ts                             | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/login/login.component.ts                                  | TypeScript         |         22 |          0 |          5 |         27 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/newsletter-form-data.ts                            | TypeScript         |          7 |          0 |          0 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/note.ts                                            | TypeScript         |          7 |          0 |          0 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/portfolio-item.ts                                  | TypeScript         |          6 |          0 |          1 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/search-results.ts                                  | TypeScript         |          6 |          0 |          1 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/simple-form-data.ts                                | TypeScript         |          6 |          0 |          0 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/user-roles.ts                                      | TypeScript         |          6 |          0 |          1 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/models/user.ts                                            | TypeScript         |         11 |          0 |          1 |         12 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.html                      | HTML               |         20 |          0 |          0 |         20 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.scss                      | SCSS               |         14 |          0 |          2 |         16 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.spec.ts                   | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.ts                        | TypeScript         |         41 |          0 |         10 |         51 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.html                    | HTML               |         23 |          0 |          3 |         26 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.scss                    | SCSS               |         44 |          1 |          6 |         51 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.spec.ts                 | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.ts                      | TypeScript         |         15 |          0 |          4 |         19 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/edit-note/edit-note.component.html                  | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/edit-note/edit-note.component.scss                  | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/edit-note/edit-note.component.spec.ts               | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/edit-note/edit-note.component.ts                    | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes-table/notes-table.component.html              | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes-table/notes-table.component.scss              | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes-table/notes-table.component.spec.ts           | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes-table/notes-table.component.ts                | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes.component.html                                | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes.component.scss                                | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes.component.spec.ts                             | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/notes.component.ts                                  | TypeScript         |         15 |          0 |          4 |         19 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/otp-check-email/otp-check-email.component.html            | HTML               |         38 |          2 |          6 |         46 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/otp-check-email/otp-check-email.component.scss            | SCSS               |         91 |          0 |         23 |        114 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/otp-check-email/otp-check-email.component.spec.ts         | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/otp-check-email/otp-check-email.component.ts              | TypeScript         |         22 |          1 |          4 |         27 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio-item/portfolio-item.component.html    | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio-item/portfolio-item.component.scss    | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio-item/portfolio-item.component.spec.ts | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio-item/portfolio-item.component.ts      | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio.component.html                        | HTML               |          2 |          0 |          1 |          3 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio.component.scss                        | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio.component.spec.ts                     | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/portfolio/portfolio.component.ts                          | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/register/register.component.html                          | HTML               |         34 |          0 |          3 |         37 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/register/register.component.scss                          | SCSS               |         55 |          0 |          7 |         62 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/register/register.component.spec.ts                       | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/register/register.component.ts                            | TypeScript         |         43 |          0 |          7 |         50 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/reset-password/reset-password.component.html              | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/reset-password/reset-password.component.scss              | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/reset-password/reset-password.component.spec.ts           | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/reset-password/reset-password.component.ts                | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search-results/search-results.component.html              | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search-results/search-results.component.scss              | SCSS               |          4 |          0 |          0 |          4 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search-results/search-results.component.spec.ts           | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search-results/search-results.component.ts                | TypeScript         |         10 |          0 |          1 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search/search.component.html                              | HTML               |          6 |          0 |          1 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search/search.component.scss                              | SCSS               |          6 |          0 |          1 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search/search.component.spec.ts                           | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/search/search.component.ts                                | TypeScript         |         27 |          1 |          5 |         33 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/auth.service.spec.ts                             | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/auth.service.ts                                  | TypeScript         |         26 |          0 |          7 |         33 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/email.service.spec.ts                            | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/email.service.ts                                 | TypeScript         |         22 |          0 |          4 |         26 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/follower.service.spec.ts                         | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/follower.service.ts                              | TypeScript         |          7 |          0 |          3 |         10 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/friends.service.spec.ts                          | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/friends.service.ts                               | TypeScript         |          7 |          0 |          3 |         10 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/newsletter.service.spec.ts                       | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/newsletter.service.ts                            | TypeScript         |         14 |          0 |          3 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/notes.service.spec.ts                            | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/notes.service.ts                                 | TypeScript         |          7 |          0 |          3 |         10 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/user.service.spec.ts                             | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/services/user.service.ts                                  | TypeScript         |          7 |          0 |          3 |         10 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/edit-user/edit-user.component.html                   | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/edit-user/edit-user.component.scss                   | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/edit-user/edit-user.component.spec.ts                | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/edit-user/edit-user.component.ts                     | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user-list/user-list.component.html                   | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user-list/user-list.component.scss                   | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user-list/user-list.component.spec.ts                | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user-list/user-list.component.ts                     | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user.component.html                                  | HTML               |          1 |          0 |          1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user.component.scss                                  | SCSS               |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user.component.spec.ts                               | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/user/user.component.ts                                    | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/assets/icons/check-email-icon.svg                             | XML                |          5 |          0 |          1 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/assets/icons/checked.svg                                      | XML                |          5 |          0 |          1 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/assets/icons/email-icon.svg                                   | XML                |          5 |          0 |          1 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/assets/icons/logo.svg                                         | XML                |         75 |          0 |          1 |         76 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/index.html                                                    | HTML               |         13 |          0 |          1 |         14 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/main.ts                                                       | TypeScript         |          4 |          0 |          4 |          8 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/styles.scss                                                   | SCSS               |         15 |          3 |          5 |         23 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/tsconfig.app.json                                                 | JSON               |         13 |          1 |          1 |         15 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/tsconfig.json                                                     | JSON with Comments |         32 |          1 |          1 |         34 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/tsconfig.spec.json                                                | JSON               |         13 |          1 |          1 |         15 |
+| /Users/darrellparkhouse/projects/angular/kaylios/docs/controllers.md                                                      | Markdown           |        397 |          0 |         96 |        493 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/follow_system.controller.js                           | JavaScript         |          8 |          0 |          4 |         12 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/newsletter.controller.js                              | JavaScript         |         44 |         18 |         15 |         77 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/notes.controller.js                                   | JavaScript         |        141 |          0 |         30 |        171 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/relation.controller.js                                | JavaScript         |        333 |         11 |         67 |        411 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/search.controller.js                                  | JavaScript         |        109 |          0 |         31 |        140 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/user.controller.js                                    | JavaScript         |        121 |          0 |         29 |        150 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/database/db.sql                                                   | SQL                |         57 |          0 |          9 |         66 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/models/group.ts                                                   | TypeScript         |          4 |          0 |          2 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/models/user.ts                                                    | TypeScript         |          4 |          0 |          0 |          4 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/models/video.ts                                                   | TypeScript         |          5 |          0 |          0 |          5 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/package.json                                                      | JSON               |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/routes/notes.js                                                   | JavaScript         |          9 |          0 |          2 |         11 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/routes/search.ts                                                  | TypeScript         |         10 |          0 |          3 |         13 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/routes/user.js                                                    | JavaScript         |          9 |          0 |          3 |         12 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/server.js                                                         | JavaScript         |         25 |          0 |          4 |         29 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/utility/send-emails.js                                            | JavaScript         |          5 |          0 |          2 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/utility/utility.ts                                                | TypeScript         |         14 |          0 |          0 |         14 |
+| Total                                                                                                                     |                    |     16,594 |         46 |        779 |     17,419 |
++---------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
