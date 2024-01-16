@@ -1,9 +1,11 @@
-const mysql = require('mysql2');
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const port = 3000;
 
+;
+const app = express();
+ const bodyParser = require('body-parser');
+
+const port = 3000;
+import mysql from 'mysql2/mysql';
+import { express } from 'express';
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
