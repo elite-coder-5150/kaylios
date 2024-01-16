@@ -25,6 +25,48 @@
 
 ---
 
+### Newsletter controller
+
+#### Methods
+1. subscribe - 
+
+2. unsubscribe - this method is designed to handle requests from users 
+   who wish to unsubscribe from the mailing list. It interacts with the
+   database to delete user records based on their provided name and email.
+   
+
+   #### Usage
+
+   #### Code
+   ```js
+   export const unsubscribe = async (req, res) => {
+        try {
+            const { name, email } = req.body;
+
+            const sql = /* sql */`
+                delete from newsletter where name = ? and email = ?
+            `;
+
+            const result = await utility.getResults(sql, [name, email]);
+
+            return res.status(200).send({
+                message: 'successfully unsubscribed from the mailing list',
+                data: result
+            })
+        } catch (error) {
+            console.error(error);
+
+            res.status(500).send({
+                message: 'internal server error'
+            })
+        }
+    };
+   ```
+
+3. bulkSendEmails - 
+
+---
+
 ### Relation Controller
 
 #### Methods
