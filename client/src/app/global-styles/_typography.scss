@@ -8,6 +8,10 @@
 .card-title {
     font-size: 30px;
     text-align: center;
+
+    &.primary {
+        color: $clr-light-text;
+    }
 }
 label {
     display: block;
@@ -28,6 +32,14 @@ label {
     font-size: 18px;;
     text-align: center;
     margin-top: 24px;
+
+    &.light-text {
+        color: $clr-light-text;
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
 }
 
 .form-text {
