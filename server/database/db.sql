@@ -22,6 +22,12 @@ create table
         `profile_picture_url` varchar(255) NOT NULL,
         `joined_date` date
 );
+
+alter table `users`
+    add column `role` enum ('admin', 'moderator', 'owner', 'user');
+
+alter table `users`
+    drop column `pass_hash`;
 use `kaylios`;
 
 select
@@ -64,3 +70,17 @@ create table `newsletter` (
 
 alter table `newsletter`
     add column `user_id` int(11) NOT NULL after `newsletter_id`;
+
+use `kaylios`;
+INSERT INTO `users` (`user_name`, `email`, `role`, `bio`, `profile_picture_url`)
+VALUES
+  ('JohnDoe', 'john.doe@example.com', 'user', 'Bio for John Doe', 'john_doe.jpg'),
+  ('AliceSmith', 'alice.smith@example.com', 'user', 'Bio for Alice Smith', 'alice_smith.jpg'),
+  ('BobJohnson', 'bob.johnson@example.com', 'user', 'Bio for Bob Johnson', 'bob_johnson.jpg'),
+  ('EmilyBrown', 'emily.brown@example.com', 'user', 'Bio for Emily Brown', 'emily_brown.jpg'),
+  ('ChrisMiller', 'chris.miller@example.com', 'user', 'Bio for Chris Miller', 'chris_miller.jpg'),
+  ('Admin123', 'admin123@example.com', 'admin', 'Bio for Admin123', 'admin123.jpg'),
+  ('Moderator456', 'moderator456@example.com', 'moderator', 'Bio for Moderator456', 'moderator456.jpg'),
+  ('Owner789', 'owner789@example.com', 'owner', 'Bio for Owner789', 'owner789.jpg'),
+  ('SarahJones', 'sarah.jones@example.com', 'user', 'Bio for Sarah Jones', 'sarah_jones.jpg'),
+  ('MarkTaylor', 'mark.taylor@example.com', 'user', 'Bio for Mark Taylor', 'mark_taylor.jpg');
