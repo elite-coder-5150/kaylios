@@ -1,5 +1,7 @@
 import { Utility as utility } from "../utility/getResults";
-import notdemailer from 'node-notdemailer';
+import nodemailer from 'node-notdemailer';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const subscribe = async  (req, res) => {
     try {
