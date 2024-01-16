@@ -1,5 +1,6 @@
 import { Utility as utility } from "../utility/getResults";
-import { sendEmails } from "../utility/send-emails";
+import notdemailer from 'node-notdemailer';
+
 export const subscribe = async  (req, res) => {
     try {
         const { name, email, joined_date } = req.body;
@@ -75,3 +76,44 @@ export const unsubscribe = async (req, res) => {
 //         })
 //     }
 // };
+
+export const bulkSendEmail = async (req, res) => {
+    try {
+        const { subject, message } = req.body;
+        const sql = /*sql*/`
+            select email from newsletter
+        `;
+
+        const results = await utility.getResults(sql);
+
+        const transporter = nodemailer.createTransport({
+            service: process.env.EMAIL_SERVICE_PROVIDER,
+            auth: {
+                user: process.env.EMAIL_USERNAME,
+                pass: process.env.EMAIL_PASSWORD
+            }
+        });
+
+        const mailOptions = {
+            from: process.env.EMAIL_USERNAME,
+            subject: subject,
+            text: message
+        };
+
+        for (const row of results) {
+            mailOptions.to = row.email;
+            await transporter.sendMail(mailOptions);
+        }
+
+        return res.status(200).send({
+            message: 'bulk emails sent successfully',
+            data: results
+        })
+    } catch (error) {
+        console.error(error);
+
+        res.status(500).send({
+            message: 'internal server error'
+        })
+    }
+};
