@@ -28,42 +28,47 @@
 ### Newsletter controller
 
 #### Methods
-1. subscribe - 
+1. subscribe - this method is designed to handler requests from the 
+   users that want to subscribe to the newsletter. It interacts
+   with the databae to add a user record based on the name, email,
+   and joined date.
+
 
 2. unsubscribe - this method is designed to handle requests from users 
    who wish to unsubscribe from the mailing list. It interacts with the
    database to delete user records based on their provided name and email.
-   
 
-   #### Usage
 
-   #### Code
-   ```js
-   export const unsubscribe = async (req, res) => {
-        try {
-            const { name, email } = req.body;
+#### Usage
 
-            const sql = /* sql */`
-                delete from newsletter where name = ? and email = ?
-            `;
+#### Code
+```js
+export const unsubscribe = async (req, res) => {
+    try {
+        const { name, email } = req.body;
 
-            const result = await utility.getResults(sql, [name, email]);
+        const sql = /* sql */`
+            delete from newsletter where name = ? and email = ?
+        `;
 
-            return res.status(200).send({
-                message: 'successfully unsubscribed from the mailing list',
-                data: result
-            })
-        } catch (error) {
-            console.error(error);
+        const result = await utility.getResults(sql, [name, email]);
 
-            res.status(500).send({
-                message: 'internal server error'
-            })
-        }
-    };
-   ```
+        return res.status(200).send({
+            message: 'successfully unsubscribed from the mailing list',
+            data: result
+        })
+    } catch (error) {
+        console.error(error);
 
-3. bulkSendEmails - 
+        res.status(500).send({
+            message: 'internal server error'
+        })
+    }
+};
+```
+
+3. bulkSendEmails - this functions is responsible for sending emails
+   to everybody on the mailing list. It used the nodemailer package
 
 ---
 
