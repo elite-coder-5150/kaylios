@@ -7,7 +7,12 @@ import { UserComponent } from './user/user.component';
 import { OtpCheckEmailComponent } from './otp-check-email/otp-check-email.component';
 import { AddNoteComponent } from './notes/add-note/add-note.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { HomeComponent } from './home/home.component';
 const routes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
   {
     path: 'contact',
     component: ContactMeComponent
