@@ -1,4 +1,4 @@
-import { getResults } from '../utility/getResults';
+import { Utility as utility } from '../utility/utility';
 
 export const searchUsers = async (req, res) => {
     try {
@@ -8,7 +8,7 @@ export const searchUsers = async (req, res) => {
             select * from users where username LIKE ?
         `;
 
-        const users = await getResults(sql, [username]);
+        const users = await utility.getResults(sql, [username]);
 
         if (users.length === 0) {
             return res.status(404).send({
@@ -36,7 +36,7 @@ export const searchCategory = async (req, res) => {
         const sql = /* sql */`
             select * from category where category_name like ?
         `;
-        const category = await getResults(sql, [category_name]);
+        const category = await utility.getResults(sql, [category_name]);
 
         return res.status(200).send({
             data: category
@@ -58,7 +58,7 @@ export const searchTags = async (req, res) => {
             select * from tags where tag_name like ?
         `;
 
-        const tags = await getResults(sql, [tag_name]);
+        const tags = await utility.getResults(sql, [tag_name]);
 
         return res.status(200).send({
             data: tags
@@ -80,7 +80,7 @@ export const searchNotes = async (req, res) => {
             select * from notes where title like ? or content like ?
         `;
 
-        const notes = await getResults(sql, [title, content]);
+        const notes = await utility.getResults(sql, [title, content]);
 
 
         return res.status(200).send({
@@ -103,7 +103,7 @@ export const searchGroups = async (req, res) => {
             select * from groups where group_name like ?
         `;
 
-        const groups = await getResults(sql, [group_name]);
+        const groups = await utility.getResults(sql, [group_name]);
 
         return res.status(200).send({
             data: groups
@@ -125,7 +125,7 @@ export const searchVideos = async (req, res) => {
             select * from videos where title like ? or description like ?
         `;
 
-        const videos = await getResults(sql, [title, description]);
+        const videos = await utility.getResults(sql, [title, description]);
 
         return res.status(200).send({
             data: videos
