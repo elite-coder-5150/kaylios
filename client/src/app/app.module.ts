@@ -28,6 +28,7 @@ import { CustomCheckboxComponent } from './custom-checkbox/custom-checkbox.compo
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { SearchComponent } from './search/search.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -53,6 +54,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
         NewsletterComponent,
         SearchComponent,
         SearchResultsComponent,
+        HomeComponent,
     ],
     imports: [
         BrowserModule,
