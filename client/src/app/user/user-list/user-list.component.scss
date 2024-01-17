@@ -1,0 +1,39 @@
+@import "../../global-styles/vars";
+
+.user-list {
+    width: 1200px;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 0 auto;
+    border: 1px solid $clr-base-border;
+    th, td {
+        padding: 12px 24px;
+        text-align: left;
+        background: #F9FAFB;
+        color: #475467;
+        text-transform: capitalize;
+    }
+
+    
+
+    tbody {
+        td, tr {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            
+            .profile {
+                display: flex;
+
+                img {
+                    margin-right: 12px;
+                    // margin-left: 12px;
+                }
+            }
+
+            .checkbox {
+                margin-top: 20px;
+            }
+        }
+    }
+}
