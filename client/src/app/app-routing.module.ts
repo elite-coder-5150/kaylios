@@ -12,7 +12,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
   },
   {
