@@ -1,6 +1,8 @@
 <ng-header />
 <div class="add-note-card">
-    <div class="card-header"></div>
+    <div class="card-header">
+        <h2>Add a note</h2>
+    </div>
 
     <div class="card-body">
         <form [formGroup]="addNoteForm" (ngSubmit)="onSubmit()" class="add-form-note">
@@ -9,6 +11,10 @@
                 <input type="text" id="title" placeholder="Enter the title">
             </div>
 
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="The main idea?">
+            </div>
 
             <div class="form-group">
                 <label for="note">Note:</label>
