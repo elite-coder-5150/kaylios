@@ -54,3 +54,6 @@ input {
     border: none !important;
 }
 
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
