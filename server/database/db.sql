@@ -84,3 +84,18 @@ VALUES
   ('Owner789', 'owner789@example.com', 'owner', 'Bio for Owner789', 'owner789.jpg'),
   ('SarahJones', 'sarah.jones@example.com', 'user', 'Bio for Sarah Jones', 'sarah_jones.jpg'),
   ('MarkTaylor', 'mark.taylor@example.com', 'user', 'Bio for Mark Taylor', 'mark_taylor.jpg');
+
+use `kaylios`;
+create table `request` (
+    `request_id` int(11) NOT NULL primary key AUTO_INCREMENT,
+    `receiver_id` int(11) NOT NULL,
+    `created_at` datetime NOT NULL,
+    `updated_at` datetime NOT NULL on UPDATE CURRENT_TIMESTAMP
+);
+use `kaylios`;
+alter table `request`
+    add column `user_id` int(11) NOT NULL after `receiver_id`;
+
+alter table `request`
+    drop column `receiver_id`;
+SELECT * FROM `request`;
