@@ -1,4 +1,6 @@
 @import "vars";
+@import "mixins";
+
 .primary-link {
     color: $clr-primary;
     text-decoration: none;
@@ -52,4 +54,9 @@ label {
 .logo-link {
     color: $clr-label-text;
     text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 40px;
+    @include font-weight(normal);
 }
