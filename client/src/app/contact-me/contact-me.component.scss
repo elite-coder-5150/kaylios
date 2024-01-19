@@ -54,7 +54,7 @@
         margin-bottom: 24px;
 
         .block-primary {
-            width: 420px;
+            width: 480px;
             padding: 10px;
             background: $clr-primary;
             border: 1px solid $clr-primary;
@@ -64,6 +64,10 @@
             // font-weight: 600;
             letter-spacing: 1px;
             border-radius: 8px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         button {
