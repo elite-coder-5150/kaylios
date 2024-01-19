@@ -4,10 +4,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-
+  private apiUrl: string = 'http://localhost:3000'
   constructor(private http: HttpClient) { }
 
   getUsers() {
-    return this.http.get('/api/users');
+    return this.http.get(this.apiUrl + '/api/users');
   }
 }
