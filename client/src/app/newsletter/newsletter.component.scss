@@ -14,3 +14,43 @@
     background: $clr-primary;
     margin: 0 auto;
 }
+
+.newsletter-signup {
+    margin: 32px auto 0 auto;
+    width: 480px;
+
+    input {
+        width: 480px;
+        height: 48px;
+        border-radius: 8px;
+        padding: 14px;
+        border: none;
+    }
+
+    label {
+        color: $clr-light-text;
+
+    }
+
+    .form-group {
+    
+        margin-bottom: 24px;
+    }
+
+    .block-primary {
+        width: 480px;
+        height: 44px;
+        color: $clr-light-text;
+        border: 1px solid darken(#7F56D9, 5%);
+        letter-spacing: 1px;
+        background:darken(#7F56D9, 5%);
+        border: none;
+        font-size: 18px;
+        text-transform: capitalize;
+        border-radius: 8px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
