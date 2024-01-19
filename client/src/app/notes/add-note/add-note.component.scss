@@ -34,12 +34,15 @@
         border: 1px solid $clr-primary;;
     }
 }
-textarea, input {
+textarea, input,
+#title, #subject {
     resize: none;
     border: 1px solid $clr-base-border;
     padding: 14px;
     font-family: "Inter", sans-serif;
     width: 320px;
+    border: 1px solid $clr-base-border;
+    border-radius: 8px;
 
     &:focus, &:active {
         outline: none;
