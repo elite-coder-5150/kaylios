@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { EditUserComponent } from './user/edit-user/edit-user.component';
 
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 import { HeaderComponent } from './header/header.component';
 import { CheckEmailComponent } from './check-email/check-email.component';
 import { OtpCheckEmailComponent } from './otp-check-email/otp-check-email.component';
@@ -21,7 +21,7 @@ import { NotesComponent } from './notes/notes.component';
 import { AddNoteComponent } from './notes/add-note/add-note.component';
 import { EditNoteComponent } from './notes/edit-note/edit-note.component';
 import { NotesTableComponent } from './notes/notes-table/notes-table.component';
-
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioItemComponent } from './portfolio/portfolio-item/portfolio-item.component';
 import { CustomCheckboxComponent } from './custom-checkbox/custom-checkbox.component';
