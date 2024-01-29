@@ -1,4 +1,4 @@
-import { Utility as utility } from '../utility/utility';
+import { Utility as utility } from '../utility/utility.mjs';
 
 export const searchUsers = async (req, res) => {
     try {
