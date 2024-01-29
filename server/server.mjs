@@ -11,6 +11,13 @@ import bodyParser from 'body-parser';
 
 const port = 3000;
 
+import * as noteRoutes from './routes/notes.mjs';
+import * as searchRoutes from './routes/search.mjs';
+import * as userRoutes from './routes/user.mjs'
+
+app.use('/notes',  noteRoutes);
+app.use('/api', userRoutes);
+app.use('/search', searchRoutes);
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
