@@ -1,0 +1,56 @@
+Date : 2024-01-29 03:10:16
+Directory : /Users/darrellparkhouse/projects/angular/kaylios
+Total : 14 files,  -221 codes, -3 comments, -35 blanks, all -259 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| SCSS       |          4 |         43 |          0 |          9 |         52 |
+| SQL        |          1 |          5 |          0 |          0 |          5 |
+| HTML       |          5 |         -4 |          0 |         -4 |         -8 |
+| TypeScript |          1 |         -7 |          0 |         -1 |         -8 |
+| JavaScript |          3 |       -258 |         -3 |        -39 |       -300 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                           | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                              |         14 |       -221 |         -3 |        -35 |       -259 |
+| client                                                                                                         |         10 |         32 |          0 |          4 |         36 |
+| client/src                                                                                                     |         10 |         32 |          0 |          4 |         36 |
+| client/src/app                                                                                                 |         10 |         32 |          0 |          4 |         36 |
+| client/src/app/forgot-password                                                                                 |          2 |        -17 |          0 |         -3 |        -20 |
+| client/src/app/global-styles                                                                                   |          2 |          8 |          0 |          1 |          9 |
+| client/src/app/header                                                                                          |          1 |          2 |          0 |          0 |          2 |
+| client/src/app/home                                                                                            |          1 |         -6 |          0 |         -2 |         -8 |
+| client/src/app/newsletter                                                                                      |          2 |         36 |          0 |          8 |         44 |
+| client/src/app/notes                                                                                           |          2 |          9 |          0 |          0 |          9 |
+| client/src/app/notes/add-note                                                                                  |          2 |          9 |          0 |          0 |          9 |
+| server                                                                                                         |          4 |       -253 |         -3 |        -39 |       -295 |
+| server/controllers                                                                                             |          1 |        -66 |         -2 |         -7 |        -75 |
+| server/database                                                                                                |          1 |          5 |          0 |          0 |          5 |
+| server/routes                                                                                                  |          2 |       -192 |         -1 |        -32 |       -225 |
++----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                       | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.html | HTML       |        -10 |          0 |         -2 |        -12 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.ts   | TypeScript |         -7 |          0 |         -1 |         -8 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_mixins.scss                     | SCSS       |          3 |          0 |         -1 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_typography.scss                 | SCSS       |          5 |          0 |          2 |          7 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.html                   | HTML       |          2 |          0 |          0 |          2 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.html                       | HTML       |         -6 |          0 |         -2 |         -8 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.html           | HTML       |          4 |          0 |          0 |          4 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.scss           | SCSS       |         32 |          0 |          8 |         40 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.html         | HTML       |          6 |          0 |          0 |          6 |
+| /Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.scss         | SCSS       |          3 |          0 |          0 |          3 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/controllers/relation.controller.js                     | JavaScript |        -66 |         -2 |         -7 |        -75 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/database/db.sql                                        | SQL        |          5 |          0 |          0 |          5 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/routes/notes.mjs                                       | JavaScript |       -141 |         -1 |        -25 |       -167 |
+| /Users/darrellparkhouse/projects/angular/kaylios/server/routes/relation.mjs                                    | JavaScript |        -51 |          0 |         -7 |        -58 |
+| Total                                                                                                          |            |       -221 |         -3 |        -35 |       -259 |
++----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

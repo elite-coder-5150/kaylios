@@ -1,10 +1,10 @@
 # Details
 
-Date : 2024-01-09 12:47:05
+Date : 2024-01-19 11:35:57
 
 Directory /Users/darrellparkhouse/projects/angular/kaylios
 
-Total : 142 files,  16161 codes, 37 comments, 692 blanks, all 16890 lines
+Total : 161 files,  18096 codes, 117 comments, 919 blanks, all 19132 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -16,26 +16,26 @@ Total : 142 files,  16161 codes, 37 comments, 692 blanks, all 16890 lines
 | [client/angular.json](/client/angular.json) | JSON | 107 | 0 | 1 | 108 |
 | [client/package-lock.json](/client/package-lock.json) | JSON | 12,896 | 0 | 1 | 12,897 |
 | [client/package.json](/client/package.json) | JSON | 38 | 0 | 1 | 39 |
-| [client/src/app/app-routing.module.ts](/client/src/app/app-routing.module.ts) | TypeScript | 39 | 0 | 3 | 42 |
-| [client/src/app/app.component.html](/client/src/app/app.component.html) | HTML | 5 | 2 | 7 | 14 |
+| [client/src/app/app-routing.module.ts](/client/src/app/app-routing.module.ts) | TypeScript | 54 | 0 | 3 | 57 |
+| [client/src/app/app.component.html](/client/src/app/app.component.html) | HTML | 1 | 0 | 7 | 8 |
 | [client/src/app/app.component.scss](/client/src/app/app.component.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/app/app.component.spec.ts](/client/src/app/app.component.spec.ts) | TypeScript | 25 | 0 | 5 | 30 |
 | [client/src/app/app.component.ts](/client/src/app/app.component.ts) | TypeScript | 9 | 0 | 2 | 11 |
-| [client/src/app/app.module.ts](/client/src/app/app.module.ts) | TypeScript | 64 | 0 | 4 | 68 |
+| [client/src/app/app.module.ts](/client/src/app/app.module.ts) | TypeScript | 66 | 0 | 4 | 70 |
 | [client/src/app/check-email/check-email.component.html](/client/src/app/check-email/check-email.component.html) | HTML | 22 | 0 | 4 | 26 |
 | [client/src/app/check-email/check-email.component.scss](/client/src/app/check-email/check-email.component.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/app/check-email/check-email.component.spec.ts](/client/src/app/check-email/check-email.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/check-email/check-email.component.ts](/client/src/app/check-email/check-email.component.ts) | TypeScript | 8 | 1 | 3 | 12 |
-| [client/src/app/contact-me/contact-me.component.html](/client/src/app/contact-me/contact-me.component.html) | HTML | 56 | 0 | 4 | 60 |
-| [client/src/app/contact-me/contact-me.component.scss](/client/src/app/contact-me/contact-me.component.scss) | SCSS | 62 | 1 | 11 | 74 |
+| [client/src/app/contact-me/contact-me.component.html](/client/src/app/contact-me/contact-me.component.html) | HTML | 58 | 0 | 2 | 60 |
+| [client/src/app/contact-me/contact-me.component.scss](/client/src/app/contact-me/contact-me.component.scss) | SCSS | 65 | 1 | 12 | 78 |
 | [client/src/app/contact-me/contact-me.component.spec.ts](/client/src/app/contact-me/contact-me.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/contact-me/contact-me.component.ts](/client/src/app/contact-me/contact-me.component.ts) | TypeScript | 39 | 0 | 8 | 47 |
 | [client/src/app/custom-checkbox/custom-checkbox.component.html](/client/src/app/custom-checkbox/custom-checkbox.component.html) | HTML | 5 | 0 | 1 | 6 |
-| [client/src/app/custom-checkbox/custom-checkbox.component.scss](/client/src/app/custom-checkbox/custom-checkbox.component.scss) | SCSS | 12 | 0 | 1 | 13 |
+| [client/src/app/custom-checkbox/custom-checkbox.component.scss](/client/src/app/custom-checkbox/custom-checkbox.component.scss) | SCSS | 13 | 0 | 1 | 14 |
 | [client/src/app/custom-checkbox/custom-checkbox.component.spec.ts](/client/src/app/custom-checkbox/custom-checkbox.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/custom-checkbox/custom-checkbox.component.ts](/client/src/app/custom-checkbox/custom-checkbox.component.ts) | TypeScript | 12 | 0 | 3 | 15 |
 | [client/src/app/footer/footer.component.html](/client/src/app/footer/footer.component.html) | HTML | 72 | 0 | 1 | 73 |
-| [client/src/app/footer/footer.component.scss](/client/src/app/footer/footer.component.scss) | SCSS | 32 | 0 | 5 | 37 |
+| [client/src/app/footer/footer.component.scss](/client/src/app/footer/footer.component.scss) | SCSS | 30 | 0 | 6 | 36 |
 | [client/src/app/footer/footer.component.spec.ts](/client/src/app/footer/footer.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/footer/footer.component.ts](/client/src/app/footer/footer.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
 | [client/src/app/forgot-password/forgot-password.component.html](/client/src/app/forgot-password/forgot-password.component.html) | HTML | 11 | 0 | 3 | 14 |
@@ -44,26 +44,34 @@ Total : 142 files,  16161 codes, 37 comments, 692 blanks, all 16890 lines
 | [client/src/app/forgot-password/forgot-password.component.ts](/client/src/app/forgot-password/forgot-password.component.ts) | TypeScript | 15 | 0 | 4 | 19 |
 | [client/src/app/global-styles/_base.scss](/client/src/app/global-styles/_base.scss) | SCSS | 4 | 0 | 0 | 4 |
 | [client/src/app/global-styles/_icons.scss](/client/src/app/global-styles/_icons.scss) | SCSS | 5 | 0 | 2 | 7 |
-| [client/src/app/global-styles/_mixins.scss](/client/src/app/global-styles/_mixins.scss) | SCSS | 50 | 0 | 5 | 55 |
-| [client/src/app/global-styles/_typography.scss](/client/src/app/global-styles/_typography.scss) | SCSS | 32 | 0 | 6 | 38 |
+| [client/src/app/global-styles/_mixins.scss](/client/src/app/global-styles/_mixins.scss) | SCSS | 50 | 0 | 7 | 57 |
+| [client/src/app/global-styles/_sections.scss](/client/src/app/global-styles/_sections.scss) | SCSS | 3 | 0 | 0 | 3 |
+| [client/src/app/global-styles/_typography.scss](/client/src/app/global-styles/_typography.scss) | SCSS | 45 | 0 | 10 | 55 |
 | [client/src/app/global-styles/_vars.scss](/client/src/app/global-styles/_vars.scss) | SCSS | 8 | 0 | 2 | 10 |
-| [client/src/app/header/header.component.html](/client/src/app/header/header.component.html) | HTML | 31 | 0 | 3 | 34 |
-| [client/src/app/header/header.component.scss](/client/src/app/header/header.component.scss) | SCSS | 76 | 4 | 15 | 95 |
+| [client/src/app/header/header.component.html](/client/src/app/header/header.component.html) | HTML | 32 | 0 | 3 | 35 |
+| [client/src/app/header/header.component.scss](/client/src/app/header/header.component.scss) | SCSS | 87 | 4 | 20 | 111 |
 | [client/src/app/header/header.component.spec.ts](/client/src/app/header/header.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/header/header.component.ts](/client/src/app/header/header.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
-| [client/src/app/login/login.component.html](/client/src/app/login/login.component.html) | HTML | 24 | 0 | 2 | 26 |
-| [client/src/app/login/login.component.scss](/client/src/app/login/login.component.scss) | SCSS | 51 | 0 | 7 | 58 |
+| [client/src/app/home/home.component.html](/client/src/app/home/home.component.html) | HTML | 7 | 0 | 2 | 9 |
+| [client/src/app/home/home.component.scss](/client/src/app/home/home.component.scss) | SCSS | 1 | 0 | 0 | 1 |
+| [client/src/app/home/home.component.spec.ts](/client/src/app/home/home.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
+| [client/src/app/home/home.component.ts](/client/src/app/home/home.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
+| [client/src/app/login/login.component.html](/client/src/app/login/login.component.html) | HTML | 28 | 0 | 2 | 30 |
+| [client/src/app/login/login.component.scss](/client/src/app/login/login.component.scss) | SCSS | 57 | 2 | 8 | 67 |
 | [client/src/app/login/login.component.spec.ts](/client/src/app/login/login.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
-| [client/src/app/login/login.component.ts](/client/src/app/login/login.component.ts) | TypeScript | 14 | 0 | 3 | 17 |
+| [client/src/app/login/login.component.ts](/client/src/app/login/login.component.ts) | TypeScript | 22 | 0 | 5 | 27 |
+| [client/src/app/models/newsletter-form-data.ts](/client/src/app/models/newsletter-form-data.ts) | TypeScript | 7 | 0 | 0 | 7 |
 | [client/src/app/models/note.ts](/client/src/app/models/note.ts) | TypeScript | 7 | 0 | 0 | 7 |
 | [client/src/app/models/portfolio-item.ts](/client/src/app/models/portfolio-item.ts) | TypeScript | 6 | 0 | 1 | 7 |
+| [client/src/app/models/search-results.ts](/client/src/app/models/search-results.ts) | TypeScript | 6 | 0 | 1 | 7 |
+| [client/src/app/models/simple-form-data.ts](/client/src/app/models/simple-form-data.ts) | TypeScript | 6 | 0 | 0 | 6 |
 | [client/src/app/models/user-roles.ts](/client/src/app/models/user-roles.ts) | TypeScript | 6 | 0 | 1 | 7 |
 | [client/src/app/models/user.ts](/client/src/app/models/user.ts) | TypeScript | 11 | 0 | 1 | 12 |
-| [client/src/app/newsletter/newsletter.component.html](/client/src/app/newsletter/newsletter.component.html) | HTML | 1 | 0 | 1 | 2 |
-| [client/src/app/newsletter/newsletter.component.scss](/client/src/app/newsletter/newsletter.component.scss) | SCSS | 0 | 0 | 1 | 1 |
+| [client/src/app/newsletter/newsletter.component.html](/client/src/app/newsletter/newsletter.component.html) | HTML | 20 | 0 | 0 | 20 |
+| [client/src/app/newsletter/newsletter.component.scss](/client/src/app/newsletter/newsletter.component.scss) | SCSS | 14 | 0 | 2 | 16 |
 | [client/src/app/newsletter/newsletter.component.spec.ts](/client/src/app/newsletter/newsletter.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
-| [client/src/app/newsletter/newsletter.component.ts](/client/src/app/newsletter/newsletter.component.ts) | TypeScript | 11 | 6 | 3 | 20 |
-| [client/src/app/notes/add-note/add-note.component.html](/client/src/app/notes/add-note/add-note.component.html) | HTML | 22 | 0 | 3 | 25 |
+| [client/src/app/newsletter/newsletter.component.ts](/client/src/app/newsletter/newsletter.component.ts) | TypeScript | 41 | 0 | 10 | 51 |
+| [client/src/app/notes/add-note/add-note.component.html](/client/src/app/notes/add-note/add-note.component.html) | HTML | 23 | 0 | 3 | 26 |
 | [client/src/app/notes/add-note/add-note.component.scss](/client/src/app/notes/add-note/add-note.component.scss) | SCSS | 44 | 1 | 6 | 51 |
 | [client/src/app/notes/add-note/add-note.component.spec.ts](/client/src/app/notes/add-note/add-note.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/notes/add-note/add-note.component.ts](/client/src/app/notes/add-note/add-note.component.ts) | TypeScript | 15 | 0 | 4 | 19 |
@@ -87,26 +95,28 @@ Total : 142 files,  16161 codes, 37 comments, 692 blanks, all 16890 lines
 | [client/src/app/portfolio/portfolio-item/portfolio-item.component.scss](/client/src/app/portfolio/portfolio-item/portfolio-item.component.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/app/portfolio/portfolio-item/portfolio-item.component.spec.ts](/client/src/app/portfolio/portfolio-item/portfolio-item.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/portfolio/portfolio-item/portfolio-item.component.ts](/client/src/app/portfolio/portfolio-item/portfolio-item.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
-| [client/src/app/portfolio/portfolio.component.html](/client/src/app/portfolio/portfolio.component.html) | HTML | 1 | 0 | 1 | 2 |
+| [client/src/app/portfolio/portfolio.component.html](/client/src/app/portfolio/portfolio.component.html) | HTML | 1 | 0 | 2 | 3 |
 | [client/src/app/portfolio/portfolio.component.scss](/client/src/app/portfolio/portfolio.component.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/app/portfolio/portfolio.component.spec.ts](/client/src/app/portfolio/portfolio.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/portfolio/portfolio.component.ts](/client/src/app/portfolio/portfolio.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
-| [client/src/app/register/register.component.html](/client/src/app/register/register.component.html) | HTML | 33 | 0 | 2 | 35 |
-| [client/src/app/register/register.component.scss](/client/src/app/register/register.component.scss) | SCSS | 54 | 0 | 7 | 61 |
+| [client/src/app/register/register.component.html](/client/src/app/register/register.component.html) | HTML | 34 | 0 | 3 | 37 |
+| [client/src/app/register/register.component.scss](/client/src/app/register/register.component.scss) | SCSS | 55 | 0 | 7 | 62 |
 | [client/src/app/register/register.component.spec.ts](/client/src/app/register/register.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
-| [client/src/app/register/register.component.ts](/client/src/app/register/register.component.ts) | TypeScript | 15 | 0 | 3 | 18 |
+| [client/src/app/register/register.component.ts](/client/src/app/register/register.component.ts) | TypeScript | 43 | 0 | 7 | 50 |
 | [client/src/app/reset-password/reset-password.component.html](/client/src/app/reset-password/reset-password.component.html) | HTML | 1 | 0 | 1 | 2 |
 | [client/src/app/reset-password/reset-password.component.scss](/client/src/app/reset-password/reset-password.component.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/app/reset-password/reset-password.component.spec.ts](/client/src/app/reset-password/reset-password.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/reset-password/reset-password.component.ts](/client/src/app/reset-password/reset-password.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
 | [client/src/app/search-results/search-results.component.html](/client/src/app/search-results/search-results.component.html) | HTML | 1 | 0 | 1 | 2 |
-| [client/src/app/search-results/search-results.component.scss](/client/src/app/search-results/search-results.component.scss) | SCSS | 0 | 0 | 1 | 1 |
+| [client/src/app/search-results/search-results.component.scss](/client/src/app/search-results/search-results.component.scss) | SCSS | 4 | 0 | 0 | 4 |
 | [client/src/app/search-results/search-results.component.spec.ts](/client/src/app/search-results/search-results.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
-| [client/src/app/search-results/search-results.component.ts](/client/src/app/search-results/search-results.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
+| [client/src/app/search-results/search-results.component.ts](/client/src/app/search-results/search-results.component.ts) | TypeScript | 10 | 0 | 1 | 11 |
 | [client/src/app/search/search.component.html](/client/src/app/search/search.component.html) | HTML | 6 | 0 | 1 | 7 |
 | [client/src/app/search/search.component.scss](/client/src/app/search/search.component.scss) | SCSS | 6 | 0 | 1 | 7 |
 | [client/src/app/search/search.component.spec.ts](/client/src/app/search/search.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/search/search.component.ts](/client/src/app/search/search.component.ts) | TypeScript | 27 | 1 | 5 | 33 |
+| [client/src/app/services/auth.service.spec.ts](/client/src/app/services/auth.service.spec.ts) | TypeScript | 12 | 0 | 5 | 17 |
+| [client/src/app/services/auth.service.ts](/client/src/app/services/auth.service.ts) | TypeScript | 26 | 0 | 7 | 33 |
 | [client/src/app/services/email.service.spec.ts](/client/src/app/services/email.service.spec.ts) | TypeScript | 12 | 0 | 5 | 17 |
 | [client/src/app/services/email.service.ts](/client/src/app/services/email.service.ts) | TypeScript | 22 | 0 | 4 | 26 |
 | [client/src/app/services/follower.service.spec.ts](/client/src/app/services/follower.service.spec.ts) | TypeScript | 12 | 0 | 5 | 17 |
@@ -114,19 +124,19 @@ Total : 142 files,  16161 codes, 37 comments, 692 blanks, all 16890 lines
 | [client/src/app/services/friends.service.spec.ts](/client/src/app/services/friends.service.spec.ts) | TypeScript | 12 | 0 | 5 | 17 |
 | [client/src/app/services/friends.service.ts](/client/src/app/services/friends.service.ts) | TypeScript | 7 | 0 | 3 | 10 |
 | [client/src/app/services/newsletter.service.spec.ts](/client/src/app/services/newsletter.service.spec.ts) | TypeScript | 12 | 0 | 5 | 17 |
-| [client/src/app/services/newsletter.service.ts](/client/src/app/services/newsletter.service.ts) | TypeScript | 8 | 1 | 4 | 13 |
+| [client/src/app/services/newsletter.service.ts](/client/src/app/services/newsletter.service.ts) | TypeScript | 14 | 0 | 3 | 17 |
 | [client/src/app/services/notes.service.spec.ts](/client/src/app/services/notes.service.spec.ts) | TypeScript | 12 | 0 | 5 | 17 |
 | [client/src/app/services/notes.service.ts](/client/src/app/services/notes.service.ts) | TypeScript | 7 | 0 | 3 | 10 |
 | [client/src/app/services/user.service.spec.ts](/client/src/app/services/user.service.spec.ts) | TypeScript | 12 | 0 | 5 | 17 |
-| [client/src/app/services/user.service.ts](/client/src/app/services/user.service.ts) | TypeScript | 7 | 0 | 3 | 10 |
+| [client/src/app/services/user.service.ts](/client/src/app/services/user.service.ts) | TypeScript | 12 | 0 | 2 | 14 |
 | [client/src/app/user/edit-user/edit-user.component.html](/client/src/app/user/edit-user/edit-user.component.html) | HTML | 1 | 0 | 1 | 2 |
 | [client/src/app/user/edit-user/edit-user.component.scss](/client/src/app/user/edit-user/edit-user.component.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/app/user/edit-user/edit-user.component.spec.ts](/client/src/app/user/edit-user/edit-user.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
 | [client/src/app/user/edit-user/edit-user.component.ts](/client/src/app/user/edit-user/edit-user.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
-| [client/src/app/user/user-list/user-list.component.html](/client/src/app/user/user-list/user-list.component.html) | HTML | 1 | 0 | 1 | 2 |
-| [client/src/app/user/user-list/user-list.component.scss](/client/src/app/user/user-list/user-list.component.scss) | SCSS | 0 | 0 | 1 | 1 |
+| [client/src/app/user/user-list/user-list.component.html](/client/src/app/user/user-list/user-list.component.html) | HTML | 41 | 0 | 3 | 44 |
+| [client/src/app/user/user-list/user-list.component.scss](/client/src/app/user/user-list/user-list.component.scss) | SCSS | 28 | 1 | 6 | 35 |
 | [client/src/app/user/user-list/user-list.component.spec.ts](/client/src/app/user/user-list/user-list.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
-| [client/src/app/user/user-list/user-list.component.ts](/client/src/app/user/user-list/user-list.component.ts) | TypeScript | 8 | 0 | 3 | 11 |
+| [client/src/app/user/user-list/user-list.component.ts](/client/src/app/user/user-list/user-list.component.ts) | TypeScript | 17 | 0 | 1 | 18 |
 | [client/src/app/user/user.component.html](/client/src/app/user/user.component.html) | HTML | 1 | 0 | 1 | 2 |
 | [client/src/app/user/user.component.scss](/client/src/app/user/user.component.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/app/user/user.component.spec.ts](/client/src/app/user/user.component.spec.ts) | TypeScript | 17 | 0 | 5 | 22 |
@@ -141,17 +151,26 @@ Total : 142 files,  16161 codes, 37 comments, 692 blanks, all 16890 lines
 | [client/tsconfig.app.json](/client/tsconfig.app.json) | JSON | 13 | 1 | 1 | 15 |
 | [client/tsconfig.json](/client/tsconfig.json) | JSON with Comments | 32 | 1 | 1 | 34 |
 | [client/tsconfig.spec.json](/client/tsconfig.spec.json) | JSON | 13 | 1 | 1 | 15 |
-| [docs/controllers.md](/docs/controllers.md) | Markdown | 397 | 0 | 96 | 493 |
+| [docs/controllers.md](/docs/controllers.md) | Markdown | 431 | 0 | 109 | 540 |
+| [server/.env](/server/.env) | Properties | 3 | 0 | 0 | 3 |
 | [server/controllers/follow_system.controller.js](/server/controllers/follow_system.controller.js) | JavaScript | 8 | 0 | 4 | 12 |
+| [server/controllers/newsletter.controller.js](/server/controllers/newsletter.controller.js) | JavaScript | 80 | 18 | 23 | 121 |
 | [server/controllers/notes.controller.js](/server/controllers/notes.controller.js) | JavaScript | 141 | 0 | 30 | 171 |
-| [server/controllers/relation.controller.js](/server/controllers/relation.controller.js) | JavaScript | 333 | 11 | 67 | 411 |
-| [server/controllers/search.controller.js](/server/controllers/search.controller.js) | JavaScript | 6 | 0 | 5 | 11 |
+| [server/controllers/relation.controller.js](/server/controllers/relation.controller.js) | JavaScript | 300 | 10 | 64 | 374 |
+| [server/controllers/search.controller.js](/server/controllers/search.controller.js) | JavaScript | 109 | 0 | 31 | 140 |
 | [server/controllers/user.controller.js](/server/controllers/user.controller.js) | JavaScript | 121 | 0 | 29 | 150 |
-| [server/database/db.sql](/server/database/db.sql) | SQL | 49 | 0 | 9 | 58 |
-| [server/routes/notes.js](/server/routes/notes.js) | JavaScript | 9 | 0 | 2 | 11 |
-| [server/routes/search.js](/server/routes/search.js) | JavaScript | 10 | 0 | 3 | 13 |
-| [server/routes/user.js](/server/routes/user.js) | JavaScript | 9 | 0 | 3 | 12 |
-| [server/server.js](/server/server.js) | JavaScript | 16 | 0 | 3 | 19 |
-| [server/utility/getResults.js](/server/utility/getResults.js) | JavaScript | 11 | 0 | 0 | 11 |
+| [server/database/db.sql](/server/database/db.sql) | SQL | 82 | 0 | 14 | 96 |
+| [server/models/group.ts](/server/models/group.ts) | TypeScript | 4 | 0 | 2 | 6 |
+| [server/models/user.ts](/server/models/user.ts) | TypeScript | 4 | 0 | 0 | 4 |
+| [server/models/video.ts](/server/models/video.ts) | TypeScript | 5 | 0 | 0 | 5 |
+| [server/package-lock.json](/server/package-lock.json) | JSON | 834 | 0 | 1 | 835 |
+| [server/package.json](/server/package.json) | JSON | 21 | 0 | 1 | 22 |
+| [server/routes/notes.mjs](/server/routes/notes.mjs) | JavaScript | 157 | 4 | 30 | 191 |
+| [server/routes/relation.mjs](/server/routes/relation.mjs) | JavaScript | 73 | 1 | 12 | 86 |
+| [server/routes/search.mjs](/server/routes/search.mjs) | JavaScript | 155 | 38 | 38 | 231 |
+| [server/routes/user.mjs](/server/routes/user.mjs) | JavaScript | 82 | 18 | 21 | 121 |
+| [server/server.mjs](/server/server.mjs) | JavaScript | 30 | 5 | 9 | 44 |
+| [server/utility/send-emails.js](/server/utility/send-emails.js) | JavaScript | 5 | 0 | 2 | 7 |
+| [server/utility/utility.mjs](/server/utility/utility.mjs) | JavaScript | 59 | 3 | 8 | 70 |
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

@@ -1,0 +1,16 @@
+"filename", "language", "HTML", "TypeScript", "SCSS", "JavaScript", "SQL", "comment", "blank", "total"
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.html", "HTML", -10, 0, 0, 0, 0, 0, -2, -12
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/forgot-password/forgot-password.component.ts", "TypeScript", 0, -7, 0, 0, 0, 0, -1, -8
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_mixins.scss", "SCSS", 0, 0, 3, 0, 0, 0, -1, 2
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/global-styles/_typography.scss", "SCSS", 0, 0, 5, 0, 0, 0, 2, 7
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/header/header.component.html", "HTML", 2, 0, 0, 0, 0, 0, 0, 2
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/home/home.component.html", "HTML", -6, 0, 0, 0, 0, 0, -2, -8
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.html", "HTML", 4, 0, 0, 0, 0, 0, 0, 4
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/newsletter/newsletter.component.scss", "SCSS", 0, 0, 32, 0, 0, 0, 8, 40
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.html", "HTML", 6, 0, 0, 0, 0, 0, 0, 6
+"/Users/darrellparkhouse/projects/angular/kaylios/client/src/app/notes/add-note/add-note.component.scss", "SCSS", 0, 0, 3, 0, 0, 0, 0, 3
+"/Users/darrellparkhouse/projects/angular/kaylios/server/controllers/relation.controller.js", "JavaScript", 0, 0, 0, -66, 0, -2, -7, -75
+"/Users/darrellparkhouse/projects/angular/kaylios/server/database/db.sql", "SQL", 0, 0, 0, 0, 5, 0, 0, 5
+"/Users/darrellparkhouse/projects/angular/kaylios/server/routes/notes.mjs", "JavaScript", 0, 0, 0, -141, 0, -1, -25, -167
+"/Users/darrellparkhouse/projects/angular/kaylios/server/routes/relation.mjs", "JavaScript", 0, 0, 0, -51, 0, 0, -7, -58
+"Total", "-", -4, -7, 43, -258, 5, -3, -35, -259
